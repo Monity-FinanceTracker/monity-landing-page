@@ -20,16 +20,17 @@ export function Hero() {
 
           {/* Improved headline with better hierarchy */}
           <h1 className="mb-6 text-balance text-5xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            Controle suas Finanças com{" "}
+            Orçamento Rápido Feito{" "}
             <span className="bg-gradient-to-r from-primary via-emerald-500 to-primary bg-clip-text text-transparent">
-              Inteligência Artificial
+              Inteligente
             </span>
           </h1>
 
           {/* Enhanced subheadline */}
           <p className="mb-12 text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl max-w-3xl mx-auto">
-            Transforme a forma como você gerencia dinheiro. Categorização automática, insights preditivos e divisão
-            inteligente de despesas—tudo isso em uma plataforma elegante e fácil de usar.
+            Rastreador de finanças pessoais com IA que aprende seus hábitos de gastos,
+            categoriza transações automaticamente e até divide despesas com amigos.
+            Tenha o panorama financeiro completo em menos de 10 segundos por transação.
           </p>
 
           {/* CTA buttons with improved styling */}
@@ -41,7 +42,7 @@ export function Hero() {
             >
               <a href="https://firstmonity.vercel.app/sign-up">
                 <span className="relative z-10 flex items-center">
-                  Começar Gratuitamente
+                  Começar Grátis →
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </a>
@@ -52,7 +53,7 @@ export function Hero() {
               variant="outline"
               className="border-border/60 text-foreground hover:bg-muted/50 bg-background/50 backdrop-blur-sm transition-all hover:-translate-y-0.5"
             >
-              <a href="https://firstmonity.vercel.app">Ver Demonstração</a>
+              <a href="https://firstmonity.vercel.app">Ver Como Funciona</a>
             </Button>
           </div>
 
@@ -60,15 +61,15 @@ export function Hero() {
           <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Check className="h-4 w-4 text-primary" strokeWidth={3} />
-              <span>Grátis para sempre</span>
-            </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Check className="h-4 w-4 text-primary" strokeWidth={3} />
               <span>Sem cartão de crédito</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Check className="h-4 w-4 text-primary" strokeWidth={3} />
-              <span>Cancele quando quiser</span>
+              <span>Plano grátis para sempre</span>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Check className="h-4 w-4 text-primary" strokeWidth={3} />
+              <span>Premium a partir de R$ 9,90/mês</span>
             </div>
           </div>
         </div>
@@ -78,8 +79,8 @@ export function Hero() {
           <div className="absolute -inset-1 bg-gradient-to-r from-primary to-emerald-600 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity" />
           <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/10 backdrop-blur-sm">
             <img
-              src="/modern-finance-dashboard-with-charts-and-transacti.jpg"
-              alt="Dashboard Monity - Interface moderna de gestão financeira"
+              src="/Screenshot 2025-10-19 at 23.31.17.png"
+              alt="Dashboard Monity - Rastreador de finanças pessoais com IA e interface modo escuro"
               className="h-auto w-full rounded-lg"
             />
           </div>

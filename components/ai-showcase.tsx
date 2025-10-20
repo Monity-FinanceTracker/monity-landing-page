@@ -3,23 +3,27 @@ import { CheckCircle2, TrendingUp, AlertCircle, Target } from "lucide-react"
 const aiFeatures = [
   {
     icon: CheckCircle2,
-    title: "Categorização Automática",
-    description: "Esqueça a entrada manual. Nossa IA categoriza transações automaticamente e aprende com cada interação.",
+    title: "Categorização Verdadeiramente Inteligente",
+    description: "Pare de marcar manualmente cada compra de café. Nossa IA treinada personalizada aprende seus padrões únicos de gastos e categoriza transações automaticamente com 90%+ de precisão. Quanto mais você usa, mais inteligente fica.",
+    metric: "Economize 10+ horas por mês em entrada de dados"
   },
   {
     icon: TrendingUp,
-    title: "Previsões Inteligentes",
-    description: "Antecipe gastos futuros e identifique tendências antes que impactem seu orçamento.",
+    title: "Divisão de Despesas em Grupo, Integrada",
+    description: "O único rastreador financeiro com divisão de despesas em tempo real. Compartilhe custos com colegas de quarto, amigos ou família. Distribuição justa de divisões, rastreamento automático de dívidas e notificações instantâneas de acertos. Chega de mensagens constrangedoras de 'você me deve'.",
+    metric: "Divida despesas em grupos ilimitados"
   },
   {
     icon: AlertCircle,
-    title: "Alertas Proativos",
-    description: "Seja notificado instantaneamente sobre padrões incomuns, possíveis fraudes ou gastos acima da média.",
+    title: "Deliciosamente Rápido de Usar",
+    description: "Interface moderna em modo escuro construída para velocidade. Adicione transações em menos de 10 segundos. Sincronização em tempo real. Animações suaves. Construído com React 19 e projetado para uso diário sem a complexidade empresarial.",
+    metric: "Meta de entrada de transação <10 segundos"
   },
   {
     icon: Target,
-    title: "Score de Saúde Financeira",
-    description: "Acompanhe sua saúde financeira com uma pontuação clara e recomendações personalizadas para melhorar.",
+    title: "Inteligência Alimentada por IA",
+    description: "Análise profunda de padrões de gastos alimentada por IA. Receba recomendações personalizadas, detecção de anomalias para gastos incomuns, pontuação de saúde financeira e projeções inteligentes.",
+    metric: "90%+ de precisão com aprendizado contínuo"
   },
 ]
 
@@ -38,12 +42,12 @@ export function AIShowcase() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
               </span>
-              Powered by IA
+              Alimentado por IA
             </div>
 
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-              Inteligência que{" "}
-              <span className="text-primary">evolui com você</span>
+              O Único Rastreador Financeiro que{" "}
+              <span className="text-primary">Fica Mais Inteligente a Cada Transação</span>
             </h2>
             <p className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground">
               Nossa IA não apenas categoriza transações—ela aprende seus hábitos, antecipa suas necessidades e
@@ -58,7 +62,8 @@ export function AIShowcase() {
                   </div>
                   <div>
                     <h3 className="mb-1.5 font-semibold text-foreground">{feature.title}</h3>
-                    <p className="text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+                    <p className="text-sm leading-relaxed text-muted-foreground mb-2">{feature.description}</p>
+                    <p className="text-xs font-medium text-primary">{feature.metric}</p>
                   </div>
                 </div>
               ))}
@@ -75,8 +80,8 @@ export function AIShowcase() {
                 <div className="text-xs text-muted-foreground mt-1">Por Transação</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">99.9%</div>
-                <div className="text-xs text-muted-foreground mt-1">Disponibilidade</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">500+</div>
+                <div className="text-xs text-muted-foreground mt-1">Traduções</div>
               </div>
             </div>
           </div>
@@ -86,8 +91,8 @@ export function AIShowcase() {
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-emerald-500/10 to-transparent blur-3xl opacity-50 group-hover:opacity-70 transition-opacity" />
             <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/10 backdrop-blur-sm hover:border-primary/30 transition-colors">
               <img
-                src="/ai-analytics-dashboard-with-spending-insights-and-.jpg"
-                alt="Dashboard de IA - Análises preditivas e insights financeiros"
+                src="/Screenshot 2025-10-19 at 23.32.55.png"
+                alt="Calendário de Fluxo de Caixa - Visualize seu saldo ao longo do tempo"
                 className="h-auto w-full rounded-lg"
               />
             </div>

@@ -3,37 +3,42 @@ import { Check, Sparkles } from "lucide-react"
 
 const plans = [
   {
-    name: "Gratuito",
+    name: "Grátis Para Sempre",
     price: "R$ 0",
-    description: "Comece sua jornada financeira sem compromisso",
+    period: "/mês",
+    description: "Tudo que você precisa para começar a controlar suas finanças. Sem cartão de crédito necessário.",
     features: [
-      "Transações ilimitadas",
-      "Até 2 orçamentos ativos",
-      "Até 2 metas de economia",
-      "Categorização automática por IA",
-      "App móvel (iOS & Android)",
-      "Análises básicas",
+      "Rastreamento ilimitado de transações",
+      "Categorização alimentada por IA",
+      "Divisão de despesas em grupo (grupos ilimitados)",
+      "2 orçamentos",
+      "2 metas de economia",
+      "Gráficos de saldo mensal",
+      "Breakdown de despesas por categoria",
+      "Dashboard responsivo para mobile",
+      "Interface modo escuro",
     ],
-    cta: "Começar Agora",
+    cta: "Começar Grátis →",
     highlighted: false,
   },
   {
     name: "Premium",
     price: "R$ 9,90",
     period: "/mês",
-    description: "Libere todo o potencial da sua gestão financeira",
+    description: "Desbloqueie todo o poder da inteligência financeira alimentada por IA. Para mestres do orçamento.",
     features: [
-      "Tudo do plano Gratuito",
-      "Orçamentos e metas ilimitados",
-      "Insights avançados de IA",
-      "Previsões e tendências",
-      "Detecção de fraudes",
-      "Divisão de despesas em grupo",
-      "Score de saúde financeira",
-      "Exportação (CSV, PDF, Excel)",
-      "Suporte prioritário 24/7",
+      "Tudo do Grátis, mais:",
+      "**Orçamentos ilimitados**",
+      "**Metas de economia ilimitadas**",
+      "**Calendário de Fluxo de Caixa** (agende transações, veja saldo futuro)",
+      "**Insights avançados de IA** (padrões de gastos, detecção de anomalias)",
+      "**Pontuação de saúde financeira** com recomendações personalizadas",
+      "**Análises profundas e previsões**",
+      "**Exportação de dados** (CSV, PDF)",
+      "**Relatórios prontos para imposto**",
+      "**Suporte premium**",
     ],
-    cta: "Começar Período Grátis",
+    cta: "Começar Teste Grátis de 14 Dias →",
     highlighted: true,
   },
 ]
@@ -47,10 +52,10 @@ export function Pricing() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Preços <span className="text-primary">honestos e simples</span>
+            Comece Grátis, <span className="text-primary">Evolua Quando Quiser</span>
           </h2>
           <p className="text-balance text-lg leading-relaxed text-muted-foreground">
-            Comece grátis, evolua quando quiser. Sem pegadinhas, sem taxas ocultas, sem contratos anuais forçados.
+            Experimente todos os recursos principais grátis. Desbloqueie poder ilimitado com Premium.
           </p>
         </div>
 
@@ -67,7 +72,7 @@ export function Pricing() {
               {plan.highlighted && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-primary to-emerald-600 px-5 py-1.5 text-sm font-semibold text-white shadow-lg flex items-center gap-1.5">
                   <Sparkles className="h-3.5 w-3.5" />
-                  Mais Popular
+                  MAIS POPULAR
                 </div>
               )}
 
@@ -100,7 +105,15 @@ export function Pricing() {
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <Check className="h-5 w-5 shrink-0 text-primary mt-0.5" strokeWidth={2.5} />
-                    <span className="text-sm leading-relaxed text-muted-foreground">{feature}</span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">
+                      {feature.includes('**') ? (
+                        <span dangerouslySetInnerHTML={{
+                          __html: feature.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                        }} />
+                      ) : (
+                        feature
+                      )}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -110,8 +123,9 @@ export function Pricing() {
 
         <div className="mt-16 text-center">
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            Todos os planos incluem criptografia de ponta a ponta, 99,9% de disponibilidade garantida e
-            atualizações automáticas sem custo adicional.
+            Sem cartão de crédito necessário para o teste. Cancele a qualquer momento.
+            <br />
+            Todos os planos incluem segurança de nível empresarial, garantia de 99,9% de disponibilidade e atualizações automáticas.
           </p>
         </div>
       </div>

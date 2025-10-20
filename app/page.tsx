@@ -5,6 +5,7 @@ import { AIShowcase } from "@/components/ai-showcase"
 import { Collaboration } from "@/components/collaboration"
 import { Analytics } from "@/components/analytics"
 import { Pricing } from "@/components/pricing"
+import { FAQ } from "@/components/faq"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Collaboration />
       <Analytics />
       <Pricing />
+      <FAQ />
       <Footer />
     </main>
   )

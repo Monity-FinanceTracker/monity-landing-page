@@ -16,7 +16,9 @@ export function Footer() {
               <span className="text-xl font-bold text-foreground">Monity</span>
             </div>
             <p className="text-sm leading-relaxed text-muted-foreground mb-6">
-              Controle financeiro inteligente, rápido e transparente com o poder da IA.
+              Rastreador de finanças pessoais alimentado por IA construído para indivíduos e grupos
+              que valorizam seu tempo. Rastreie despesas, divida contas e domine seu
+              dinheiro com automação inteligente.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -52,44 +54,18 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#ai" className="text-muted-foreground transition-colors hover:text-primary">
-                  IA Insights
-                </a>
-              </li>
-              <li>
                 <a href="#pricing" className="text-muted-foreground transition-colors hover:text-primary">
                   Preços
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  Atualizações
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-semibold text-foreground">Desenvolvedores</h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  Documentação
+                  Premium
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  API
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  Blog Técnico
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  Suporte
+                <a href="#faq" className="text-muted-foreground transition-colors hover:text-primary">
+                  FAQ
                 </a>
               </li>
             </ul>
@@ -100,17 +76,43 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  Sobre Nós
+                  Sobre
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  Privacidade
+                  Blog
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  Termos de Uso
+                  Roadmap
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                  Código Aberto
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="mb-4 font-semibold text-foreground">Legal</h3>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                  Política de Privacidade
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                  Termos de Serviço
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                  Segurança de Dados
                 </a>
               </li>
               <li>
@@ -124,10 +126,12 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border/30 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2025 Monity. Código aberto sob Licença MIT.
+            © 2025 Monity. Orçamento rápido feito inteligente.
             <br className="sm:hidden" />
             <span className="hidden sm:inline"> • </span>
-            Construído com dedicação para seu bem-estar financeiro.
+            Construído com ❤️ usando React 19, Node.js e PostgreSQL
+            <br />
+            Código aberto • Licença MIT • Desenvolvimento Transparente
           </p>
         </div>
       </div>

@@ -3,24 +3,24 @@ import { Users, UserPlus, Receipt, DollarSign } from "lucide-react"
 const collaborationFeatures = [
   {
     icon: Users,
-    title: "Grupos Ilimitados",
+    title: "Cadastre-se Grátis em 30 Segundos",
     description:
-      "Viagens, moradia compartilhada, eventos familiares—crie quantos grupos precisar e mantenha tudo organizado.",
+      "Crie sua conta, sem cartão de crédito necessário. Escolha sua moeda e preferências. Comece com nosso generoso nível gratuito que inclui rastreamento completo de transações, 2 orçamentos e 2 metas de economia.",
   },
   {
     icon: UserPlus,
-    title: "Adicione em Segundos",
-    description: "Convide amigos por e-mail ou link. Eles recebem notificações automáticas e já entram sincronizados.",
+    title: "Adicione Transações, Deixe a IA Aprender",
+    description: "Adicione rapidamente despesas e receitas em menos de 10 segundos. Nossa IA sugere categorias baseadas na descrição e valor. Aprove ou corrija as sugestões—de qualquer forma, a IA fica mais inteligente e precisa com seus hábitos únicos.",
   },
   {
     icon: Receipt,
-    title: "Divisão Flexível",
-    description: "Divida igualmente, por porcentagem ou valores customizados. Você decide como funciona melhor.",
+    title: "Obtenha Insights, Tome Melhores Decisões",
+    description: "Veja seu dashboard ganhar vida com rastreamento de saldo em tempo real, breakdowns de despesas e progresso do orçamento. Identifique padrões de gastos, atinja metas de economia e tome decisões financeiras baseadas em dados com confiança.",
   },
   {
     icon: DollarSign,
-    title: "Acertos Automáticos",
-    description: "Veja instantaneamente quem deve para quem. O Monity calcula e simplifica todos os acertos.",
+    title: "Divida Despesas com Amigos",
+    description: "Crie um grupo para começar a compartilhar custos de forma justa e automática. Acompanhe quem deve o quê em tempo real com rastreamento automático de acertos.",
   },
 ]
 
@@ -37,7 +37,7 @@ export function Collaboration() {
             <div className="absolute -inset-4 bg-gradient-to-br from-emerald-500/15 via-primary/10 to-transparent blur-3xl opacity-50 group-hover:opacity-70 transition-opacity" />
             <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/5 backdrop-blur-sm hover:border-primary/30 transition-colors">
               <img
-                src="/group-expense-splitting-interface-with-multiple-us.jpg"
+                src="/Screenshot 2025-10-19 at 23.31.34.png"
                 alt="Interface de divisão de despesas em grupo com múltiplos usuários"
                 className="h-auto w-full rounded-lg"
               />
@@ -48,16 +48,16 @@ export function Collaboration() {
             {/* Enhanced badge */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/5 px-4 py-2 text-sm font-medium text-emerald-600 dark:text-emerald-400 backdrop-blur-sm">
               <Users className="h-4 w-4" />
-              <span>Colaboração</span>
+              <span>Como Funciona</span>
             </div>
 
             <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-              Divida despesas{" "}
-              <span className="text-primary">sem complicação</span>
+              Do Caos à{" "}
+              <span className="text-primary">Clareza em 3 Passos Simples</span>
             </h2>
             <p className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground">
-              Fim das planilhas confusas e conversas intermináveis. Gerencie despesas compartilhadas de forma
-              simples, transparente e em tempo real.
+              Chega de planilhas confusas e conversas intermináveis. Gerencie despesas compartilhadas
+              de forma simples, transparente e em tempo real.
             </p>
 
             <div className="space-y-5">
