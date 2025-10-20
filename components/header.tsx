@@ -34,10 +34,10 @@ export function Header() {
 
           <div className="flex items-center gap-3">
             <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex text-muted-foreground hover:text-foreground">
-              <a href="https://firstmonity.vercel.app/">Entrar</a>
+              <a href="https://firstmonity.vercel.app/signup">Entrar</a>
             </Button>
             <Button asChild size="sm" className="bg-gradient-to-r from-primary to-emerald-600 text-white hover:shadow-lg hover:shadow-primary/25 transition-all">
-              <a href="https://firstmonity.vercel.app/sign-up">Começar Grátis</a>
+              <a href="https://firstmonity.vercel.app/signup">Começar Grátis</a>
             </Button>
           </div>
         </div>

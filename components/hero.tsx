@@ -40,7 +40,7 @@ export function Hero() {
               size="lg"
               className="group relative overflow-hidden bg-gradient-to-r from-primary to-emerald-600 text-white hover:shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-0.5"
             >
-              <a href="https://firstmonity.vercel.app/sign-up">
+              <a href="https://firstmonity.vercel.app/signup">
                 <span className="relative z-10 flex items-center">
                   Começar Grátis →
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -53,7 +53,7 @@ export function Hero() {
               variant="outline"
               className="border-border/60 text-foreground hover:bg-muted/50 bg-background/50 backdrop-blur-sm transition-all hover:-translate-y-0.5"
             >
-              <a href="https://firstmonity.vercel.app">Ver Como Funciona</a>
+              <a href="https://firstmonity.vercel.app/signup">Ver Como Funciona</a>
             </Button>
           </div>
 

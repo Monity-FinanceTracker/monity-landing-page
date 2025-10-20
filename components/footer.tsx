@@ -59,7 +59,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <a href="https://firstmonity.vercel.app/signup?premium=true" className="text-muted-foreground transition-colors hover:text-primary">
                   Premium
                 </a>
               </li>

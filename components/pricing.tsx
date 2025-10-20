@@ -98,7 +98,7 @@ export function Pricing() {
                 variant={plan.highlighted ? "default" : "outline"}
                 size="lg"
               >
-                <a href="https://firstmonity.vercel.app/sign-up">{plan.cta}</a>
+                <a href={plan.highlighted ? "https://firstmonity.vercel.app/signup?premium=true" : "https://firstmonity.vercel.app/signup"}>{plan.cta}</a>
               </Button>
 
               <ul className="space-y-3.5">
