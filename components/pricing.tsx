@@ -38,7 +38,7 @@ const plans = [
       "**Relatórios prontos para imposto**",
       "**Suporte premium**",
     ],
-    cta: "Começar Teste Grátis de 14 Dias →",
+    cta: "Começar Teste Grátis de 7 Dias →",
     highlighted: true,
   },
 ]
