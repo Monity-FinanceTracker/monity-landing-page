@@ -79,7 +79,7 @@ export function Hero() {
           <div className="absolute -inset-1 bg-gradient-to-r from-primary to-emerald-600 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity" />
           <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/10 backdrop-blur-sm">
             <img
-              src="/Screenshot 2025-10-19 at 23.31.17.png"
+              src="/WhatsApp Image 2025-10-24 at 00.48.45.jpeg"
               alt="Dashboard Monity - Rastreador de finanças pessoais com IA e interface modo escuro"
               className="h-auto w-full rounded-lg"
             />

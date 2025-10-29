@@ -91,7 +91,7 @@ export function AIShowcase() {
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-emerald-500/10 to-transparent blur-3xl opacity-50 group-hover:opacity-70 transition-opacity" />
             <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/10 backdrop-blur-sm hover:border-primary/30 transition-colors">
               <img
-                src="/Screenshot 2025-10-19 at 23.32.55.png"
+                src="/Screenshot 2025-10-24 at 00.56.29.png"
                 alt="Calendário de Fluxo de Caixa - Visualize seu saldo ao longo do tempo"
                 className="h-auto w-full rounded-lg"
               />
