@@ -1,4 +1,5 @@
 import { CheckCircle2, TrendingUp, AlertCircle, Target } from "lucide-react"
+import { Reveal } from "@/components/reveal"
 
 const aiFeatures = [
   {
@@ -16,7 +17,7 @@ const aiFeatures = [
   {
     icon: AlertCircle,
     title: "Deliciosamente Rápido de Usar",
-    description: "Interface moderna em modo escuro construída para velocidade. Adicione transações em menos de 10 segundos. Sincronização em tempo real. Animações suaves. Construído com React 19 e projetado para uso diário sem a complexidade empresarial.",
+    description: "Interface moderna em modo escuro feita para ser rápida e simples. Adicione transações em menos de 10 segundos, veja tudo sincronizado em tempo real e aproveite uma experiência suave pensada para o seu dia a dia.",
     metric: "Meta de entrada de transação <10 segundos"
   },
   {
@@ -37,26 +38,26 @@ export function AIShowcase() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
           <div>
             {/* Enhanced badge */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-medium text-primary backdrop-blur-sm">
+            <Reveal as="div" className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-medium text-primary backdrop-blur-sm" direction="up">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
               </span>
               Alimentado por IA
-            </div>
+            </Reveal>
 
-            <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            <Reveal as="h2" className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up" delayMs={50}>
               O Único Rastreador Financeiro que{" "}
               <span className="text-primary">Fica Mais Inteligente a Cada Transação</span>
-            </h2>
-            <p className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground">
+            </Reveal>
+            <Reveal as="p" className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={100}>
               Nossa IA não apenas categoriza transações—ela aprende seus hábitos, antecipa suas necessidades e
               oferece insights cada vez mais precisos ao longo do tempo.
-            </p>
+            </Reveal>
 
             <div className="space-y-5">
-              {aiFeatures.map((feature) => (
-                <div key={feature.title} className="group flex gap-4 p-4 rounded-xl hover:bg-muted/30 transition-colors">
+              {aiFeatures.map((feature, i) => (
+                <Reveal key={feature.title} className="group flex gap-4 p-4 rounded-xl hover:bg-muted/30 transition-colors" delayMs={i * 80}>
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:scale-110 transition-transform">
                     <feature.icon className="h-5 w-5" />
                   </div>
@@ -65,7 +66,7 @@ export function AIShowcase() {
                     <p className="text-sm leading-relaxed text-muted-foreground mb-2">{feature.description}</p>
                     <p className="text-xs font-medium text-primary">{feature.metric}</p>
                   </div>
-                </div>
+                </Reveal>
               ))}
             </div>
 
@@ -86,7 +87,7 @@ export function AIShowcase() {
             </div>
           </div>
 
-          <div className="relative group lg:order-last order-first">
+          <Reveal className="relative group lg:order-last order-first" direction="left" delayMs={150}>
             {/* Enhanced glow effect */}
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-emerald-500/10 to-transparent blur-3xl opacity-50 group-hover:opacity-70 transition-opacity" />
             <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/10 backdrop-blur-sm hover:border-primary/30 transition-colors">
@@ -96,7 +97,7 @@ export function AIShowcase() {
                 className="h-auto w-full rounded-lg"
               />
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

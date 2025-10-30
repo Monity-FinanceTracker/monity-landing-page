@@ -1,4 +1,5 @@
 import { Users, UserPlus, Receipt, DollarSign } from "lucide-react"
+import { Reveal } from "@/components/reveal"
 
 const collaborationFeatures = [
   {
@@ -32,7 +33,7 @@ export function Collaboration() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
-          <div className="order-2 lg:order-1 relative group">
+          <Reveal className="order-2 lg:order-1 relative group" direction="right" delayMs={150}>
             {/* Enhanced glow effect */}
             <div className="absolute -inset-4 bg-gradient-to-br from-emerald-500/15 via-primary/10 to-transparent blur-3xl opacity-50 group-hover:opacity-70 transition-opacity" />
             <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/5 backdrop-blur-sm hover:border-primary/30 transition-colors">
@@ -42,27 +43,27 @@ export function Collaboration() {
                 className="h-auto w-full rounded-lg"
               />
             </div>
-          </div>
+          </Reveal>
 
           <div className="order-1 lg:order-2">
             {/* Enhanced badge */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/5 px-4 py-2 text-sm font-medium text-emerald-600 dark:text-emerald-400 backdrop-blur-sm">
+            <Reveal as="div" className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/5 px-4 py-2 text-sm font-medium text-emerald-600 dark:text-emerald-400 backdrop-blur-sm" direction="up">
               <Users className="h-4 w-4" />
               <span>Como Funciona</span>
-            </div>
+            </Reveal>
 
-            <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            <Reveal as="h2" className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up" delayMs={50}>
               Do Caos à{" "}
               <span className="text-primary">Clareza em 3 Passos Simples</span>
-            </h2>
-            <p className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground">
+            </Reveal>
+            <Reveal as="p" className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={100}>
               Chega de planilhas confusas e conversas intermináveis. Gerencie despesas compartilhadas
               de forma simples, transparente e em tempo real.
-            </p>
+            </Reveal>
 
             <div className="space-y-5">
-              {collaborationFeatures.map((feature) => (
-                <div key={feature.title} className="group flex gap-4 p-4 rounded-xl hover:bg-muted/30 transition-colors">
+              {collaborationFeatures.map((feature, i) => (
+                <Reveal key={feature.title} className="group flex gap-4 p-4 rounded-xl hover:bg-muted/30 transition-colors" delayMs={i * 80}>
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform">
                     <feature.icon className="h-5 w-5" />
                   </div>
@@ -70,7 +71,7 @@ export function Collaboration() {
                     <h3 className="mb-1.5 font-semibold text-foreground">{feature.title}</h3>
                     <p className="text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
                   </div>
-                </div>
+                </Reveal>
               ))}
             </div>
           </div>

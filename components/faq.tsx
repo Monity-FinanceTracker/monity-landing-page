@@ -1,13 +1,14 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Reveal } from "@/components/reveal"
 
 const faqs = [
   {
     question: "Como funciona a categorização por IA?",
-    answer: "O Monity usa um classificador Naive Bayes treinado personalizado que aprende com seus padrões de transações. Quando você adiciona uma transação, a IA sugere uma categoria baseada na descrição, valor e seu comportamento passado. Quando você aprova ou corrige a sugestão, a IA se treina para ser mais precisa com SEUS hábitos únicos de gastos. Com o tempo, ela alcança 90%+ de precisão para a maioria dos usuários."
+    answer: "A IA aprende com as suas escolhas. Ao adicionar uma transação, você recebe uma sugestão de categoria baseada no que já fez antes. Ao aprovar ou corrigir, o sistema se adapta ao seu estilo e fica cada vez mais preciso — sem esforço extra."
   },
   {
     question: "Meus dados financeiros estão seguros?",
-    answer: "Absolutamente. Usamos Supabase com Row Level Security (RLS), significando que seus dados são isolados no nível do banco de dados e acessíveis apenas por você. Todas as conexões são criptografadas via HTTPS. Nunca vendemos seus dados, mostramos anúncios ou compartilhamos suas informações com terceiros. Você pode exportar ou deletar seus dados a qualquer momento."
+    answer: "Sim. Seus dados são protegidos com padrões rigorosos de segurança e criptografia. Eles são seus: não vendemos nem compartilhamos suas informações. Você pode exportar ou excluir tudo quando quiser."
   },
   {
     question: "Como funciona a divisão de despesas em grupo?",
@@ -15,7 +16,7 @@ const faqs = [
   },
   {
     question: "O que torna o Monity diferente do Mint ou YNAB?",
-    answer: "O Monity é a única plataforma que combina rastreamento completo de finanças pessoais com divisão de despesas em grupo em tempo real. Nossa IA realmente aprende com seu feedback (não apenas correspondência de palavras-chave). Somos construídos com tecnologia moderna (React 19, Vite, Tailwind) para velocidade e beleza que aplicativos legados não conseguem igualar. Além disso, somos open-source e transparentes sobre nosso desenvolvimento."
+    answer: "O Monity reúne tudo em um só lugar: controle completo das suas finanças pessoais e divisão de despesas em grupo em tempo real. A IA aprende com você para reduzir tarefas repetitivas e acelerar seu dia a dia. Simples, bonito e focado em resultados práticos — não em complexidade."
   },
   {
     question: "Posso usar o Monity no mobile?",
@@ -27,11 +28,11 @@ const faqs = [
   },
   {
     question: "Posso exportar meus dados?",
-    answer: "Usuários Premium podem exportar histórico de transações, orçamentos e relatórios como arquivos CSV ou PDF. Seus dados sempre pertencem a você—nunca vamos prendê-lo. Usuários do nível gratuito podem visualizar e copiar manualmente seus dados a qualquer momento."
+    answer: "Sim. Você pode levar seus dados com você a qualquer momento, exportando históricos, orçamentos e relatórios de forma simples. Seus dados são sempre seus."
   },
   {
     question: "Como funciona o teste gratuito?",
-    answer: "Comece com o nível Gratuito (sem cartão de crédito necessário). Quando estiver pronto para experimentar o Premium, você tem 14 dias grátis com acesso completo a todos os recursos Premium. Sem cartão de crédito necessário para o teste. Após 14 dias, você pode se inscrever para continuar no Premium ou permanecer no generoso nível Gratuito."
+    answer: "Comece com o nível Gratuito. Quando estiver pronto para experimentar o Premium, você tem 7 dias grátis com acesso completo a todos os recursos Premium. Após 7 dias, você pode se inscrever para continuar no Premium ou permanecer no generoso nível Gratuito."
   }
 ]
 
@@ -43,30 +44,31 @@ export function FAQ() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+          <Reveal as="h2" className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up">
             Perguntas <span className="text-primary">Frequentes</span>
-          </h2>
-          <p className="text-balance text-lg leading-relaxed text-muted-foreground">
+          </Reveal>
+          <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
             Tudo que você precisa saber sobre o Monity. Não encontrou o que procura? 
             <a href="#" className="text-primary hover:underline">Entre em contato com nossa equipe de suporte</a>.
-          </p>
+          </Reveal>
         </div>
 
         <div className="mx-auto max-w-4xl">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
-                value={`item-${index}`}
-                className="rounded-2xl border border-border/50 bg-card/50 p-6 backdrop-blur-sm hover:border-primary/30 transition-colors"
-              >
-                <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+              <Reveal key={index} delayMs={index * 70}>
+                <AccordionItem 
+                  value={`item-${index}`}
+                  className="rounded-2xl border border-border/50 bg-card/50 p-6 backdrop-blur-sm hover:border-primary/30 transition-colors"
+                >
+                  <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              </Reveal>
             ))}
           </Accordion>
         </div>

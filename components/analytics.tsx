@@ -1,4 +1,5 @@
 import { BarChart3, PieChart, LineChart, Activity } from "lucide-react"
+import { Reveal } from "@/components/reveal"
 
 const analyticsCards = [
   {
@@ -31,21 +32,22 @@ export function Analytics() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+          <Reveal as="h2" className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up">
             Dados que <span className="text-primary">realmente importam</span>
-          </h2>
-          <p className="text-balance text-lg leading-relaxed text-muted-foreground">
+          </Reveal>
+          <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
             Não são apenas números—são insights acionáveis que ajudam você a tomar decisões financeiras mais
             inteligentes todos os dias.
-          </p>
+          </Reveal>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {analyticsCards.map((card, index) => (
-            <div
+            <Reveal
               key={card.title}
               className="group relative rounded-2xl border border-border/50 bg-card/50 p-6 hover:border-primary/40 transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 backdrop-blur-sm"
-              style={{ animationDelay: `${index * 100}ms` }}
+              delayMs={index * 90}
+              direction="up"
             >
               {/* Subtle gradient on hover */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -57,7 +59,7 @@ export function Analytics() {
                 <h3 className="mb-2 font-semibold text-foreground">{card.title}</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">{card.description}</p>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

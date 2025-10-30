@@ -1,11 +1,12 @@
 import { Brain, Users, Zap, Target, Calendar, BarChart3 } from "lucide-react"
+import { Reveal } from "@/components/reveal"
 
 const features = [
   {
     icon: Brain,
     title: "IA que Aprende Seus Hábitos",
     description:
-      "Nunca mais perca tempo com categorização manual. Nosso classificador Naive Bayes aprende com cada transação que você aprova ou corrige, tornando-se mais preciso com seus padrões únicos de gastos. Receba sugestões inteligentes de categorias, detecção de duplicatas e identificação de assinaturas—tudo automaticamente.",
+      "Pare de perder tempo categorizando manualmente. Nossa IA aprende com suas decisões e passa a sugerir categorias do seu jeito. Ganhe velocidade com sugestões inteligentes, detecção de duplicatas e identificação de assinaturas — automaticamente.",
     keyPoints: [
       "Auto-categorização com aprendizado contínuo",
       "Detecção de transações duplicadas", 
@@ -65,7 +66,7 @@ const features = [
     icon: Zap,
     title: "Controle Financeiro que Você Vai Adorar",
     description:
-      "Interface moderna em modo escuro construída com Tailwind CSS e React 19. Design responsivo mobile-first com animações suaves. Gráficos interativos alimentados por Chart.js. Arquitetura limpa que é rápida, bonita e funcional.",
+      "Interface rápida, fluida e agradável de usar no dia a dia. Visual limpo em modo escuro, responsivo desde o primeiro toque, com animações suaves e gráficos claros para decisões melhores em menos tempo.",
     keyPoints: [
       "Design responsivo mobile-first",
       "Otimizado para modo escuro",
@@ -83,22 +84,23 @@ export function Features() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+          <Reveal as="h2" className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up">
             Tudo que Você Precisa para{" "}
             <span className="text-primary">Dominar Seu Dinheiro</span>
-          </h2>
-          <p className="text-balance text-lg leading-relaxed text-muted-foreground">
+          </Reveal>
+          <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
             De insights alimentados por IA ao rastreamento colaborativo de despesas,
             o Monity combina as melhores ferramentas de finanças pessoais em uma plataforma linda.
-          </p>
+          </Reveal>
         </div>
 
         <div className="mt-16 grid gap-8 lg:grid-cols-2">
           {features.map((feature, index) => (
-            <div
+            <Reveal
               key={feature.title}
               className="group relative rounded-2xl border border-border/50 bg-card/50 p-8 transition-all hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 backdrop-blur-sm"
-              style={{ animationDelay: `${index * 100}ms` }}
+              delayMs={index * 80}
+              direction="up"
             >
               {/* Subtle gradient on hover */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -120,7 +122,7 @@ export function Features() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

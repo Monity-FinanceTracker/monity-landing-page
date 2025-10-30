@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Check, Sparkles } from "lucide-react"
+import { Reveal } from "@/components/reveal"
 
 const plans = [
   {
@@ -34,7 +35,7 @@ const plans = [
       "**Insights avançados de IA** (padrões de gastos, detecção de anomalias)",
       "**Pontuação de saúde financeira** com recomendações personalizadas",
       "**Análises profundas e previsões**",
-      "**Exportação de dados** (CSV, PDF)",
+      "**Exportação de dados**",
       "**Relatórios prontos para imposto**",
       "**Suporte premium**",
     ],
@@ -51,23 +52,25 @@ export function Pricing() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+          <Reveal as="h2" className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up">
             Comece Grátis, <span className="text-primary">Evolua Quando Quiser</span>
-          </h2>
-          <p className="text-balance text-lg leading-relaxed text-muted-foreground">
+          </Reveal>
+          <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
             Experimente todos os recursos principais grátis. Desbloqueie poder ilimitado com Premium.
-          </p>
+          </Reveal>
         </div>
 
         <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-2">
-          {plans.map((plan) => (
-            <div
+          {plans.map((plan, i) => (
+            <Reveal
               key={plan.name}
               className={`relative rounded-2xl border p-8 transition-all ${
                 plan.highlighted
                   ? "border-primary/50 bg-card/50 shadow-2xl shadow-primary/10 scale-105 backdrop-blur-sm"
                   : "border-border/50 bg-card/50 hover:border-border backdrop-blur-sm"
               }`}
+              delayMs={i * 100}
+              direction="up"
             >
               {plan.highlighted && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-primary to-emerald-600 px-5 py-1.5 text-sm font-semibold text-white shadow-lg flex items-center gap-1.5">
@@ -117,17 +120,17 @@ export function Pricing() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </Reveal>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <Reveal as="div" className="mt-16 text-center" direction="up" delayMs={150}>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
             Sem cartão de crédito necessário para o teste. Cancele a qualquer momento.
             <br />
             Todos os planos incluem segurança de nível empresarial, garantia de 99,9% de disponibilidade e atualizações automáticas.
           </p>
-        </div>
+        </Reveal>
       </div>
     </section>
   )

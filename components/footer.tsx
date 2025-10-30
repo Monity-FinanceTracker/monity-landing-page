@@ -127,11 +127,7 @@ export function Footer() {
         <div className="mt-12 border-t border-border/30 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
             © 2025 Monity. Orçamento rápido feito inteligente.
-            <br className="sm:hidden" />
-            <span className="hidden sm:inline"> • </span>
-            Construído com ❤️ usando React 19, Node.js e PostgreSQL
-            <br />
-            Código aberto • Licença MIT • Desenvolvimento Transparente
+            
           </p>
         </div>
       </div>
