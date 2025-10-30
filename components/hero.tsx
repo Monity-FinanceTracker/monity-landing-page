@@ -60,10 +60,6 @@ export function Hero() {
 
           {/* Enhanced trust indicators */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm">
-            <Reveal as="div" className="flex items-center gap-2 text-muted-foreground" direction="up" delayMs={200}>
-              <Check className="h-4 w-4 text-primary" strokeWidth={3} />
-              <span>Sem cartão de crédito</span>
-            </Reveal>
             <Reveal as="div" className="flex items-center gap-2 text-muted-foreground" direction="up" delayMs={250}>
               <Check className="h-4 w-4 text-primary" strokeWidth={3} />
               <span>Plano grátis para sempre</span>

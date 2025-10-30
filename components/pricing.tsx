@@ -7,7 +7,7 @@ const plans = [
     name: "Grátis Para Sempre",
     price: "R$ 0",
     period: "/mês",
-    description: "Tudo que você precisa para começar a controlar suas finanças. Sem cartão de crédito necessário.",
+    description: "Tudo que você precisa para começar a controlar suas finanças.",
     features: [
       "Rastreamento ilimitado de transações",
       "Categorização alimentada por IA",
@@ -126,7 +126,7 @@ export function Pricing() {
 
         <Reveal as="div" className="mt-16 text-center" direction="up" delayMs={150}>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            Sem cartão de crédito necessário para o teste. Cancele a qualquer momento.
+            Cancele a qualquer momento.
             <br />
             Todos os planos incluem segurança de nível empresarial, garantia de 99,9% de disponibilidade e atualizações automáticas.
           </p>

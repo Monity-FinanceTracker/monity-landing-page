@@ -6,7 +6,7 @@ const collaborationFeatures = [
     icon: Users,
     title: "Cadastre-se Grátis em 30 Segundos",
     description:
-      "Crie sua conta, sem cartão de crédito necessário. Escolha sua moeda e preferências. Comece com nosso generoso nível gratuito que inclui rastreamento completo de transações, 2 orçamentos e 2 metas de economia.",
+      "Crie sua conta. Escolha sua moeda e preferências. Comece com nosso generoso nível gratuito que inclui rastreamento completo de transações, 2 orçamentos e 2 metas de economia.",
   },
   {
     icon: UserPlus,
