@@ -4,7 +4,7 @@ import { Reveal } from "@/components/reveal"
 
 const plans = [
   {
-    name: "Grátis Para Sempre",
+    name: "Gratuito",
     price: "R$ 0",
     period: "/mês",
     description: "Tudo que você precisa para começar a controlar suas finanças.",
