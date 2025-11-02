@@ -1,27 +1,27 @@
-import { Users, UserPlus, Receipt, DollarSign } from "lucide-react"
+import { Users, UserPlus, Receipt, DollarSign, Sparkles } from "lucide-react"
 import { Reveal } from "@/components/reveal"
 
 const collaborationFeatures = [
   {
     icon: Users,
-    title: "Cadastre-se Grátis em 30 Segundos",
+    title: "Comece em 30 Segundos",
     description:
-      "Crie sua conta. Escolha sua moeda e preferências. Comece com nosso generoso nível gratuito que inclui rastreamento completo de transações, 2 orçamentos e 2 metas de economia.",
+      "Crie sua conta grátis e escolha sua moeda. Convide amigos para grupos de compartilhamento de despesas. Sem complicação, sem planilhas, sem chat de WhatsApp constrangedor.",
   },
   {
     icon: UserPlus,
-    title: "Adicione Transações, Deixe a IA Aprender",
-    description: "Adicione rapidamente despesas e receitas em menos de 10 segundos. Nossa IA sugere categorias baseadas na descrição e valor. Aprove ou corrija as sugestões—de qualquer forma, a IA fica mais inteligente e precisa com seus hábitos únicos.",
+    title: "Adicione Despesas em Segundos",
+    description: "Almoço com amigos? Farmácia compartilhada? Crie a despesa, escolha quem pagou e como dividir. A IA sugere automaticamente e você aprova com um clique. Simples assim.",
   },
   {
     icon: Receipt,
-    title: "Obtenha Insights, Tome Melhores Decisões",
-    description: "Veja seu dashboard ganhar vida com rastreamento de saldo em tempo real, breakdowns de despesas e progresso do orçamento. Identifique padrões de gastos, atinja metas de economia e tome decisões financeiras baseadas em dados com confiança.",
+    title: "Todos Veem Tudo em Tempo Real",
+    description: "Chega de ficar calculando no papel. Todos do grupo veem quem deve o quê, instantaneamente. Dashboard transparente, histórico completo e dívidas sempre atualizadas.",
   },
   {
     icon: DollarSign,
-    title: "Divida Despesas com Amigos",
-    description: "Crie um grupo para começar a compartilhar custos de forma justa e automática. Acompanhe quem deve o quê em tempo real com rastreamento automático de acertos.",
+    title: "Marque Como Pago e Siga Sua Vida",
+    description: "Quando alguém paga o que devia, um clique e pronto. O sistema recalcula tudo automaticamente. Relacionamentos preservados, amizades fortalecidas.",
   },
 ]
 
@@ -48,17 +48,17 @@ export function Collaboration() {
           <div className="order-1 lg:order-2">
             {/* Enhanced badge */}
             <Reveal as="div" className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/5 px-4 py-2 text-sm font-medium text-emerald-600 dark:text-emerald-400 backdrop-blur-sm" direction="up">
-              <Users className="h-4 w-4" />
-              <span>Como Funciona</span>
+              <Sparkles className="h-4 w-4" />
+              <span>O Único com Divisão de Contas Integrada</span>
             </Reveal>
 
             <Reveal as="h2" className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up" delayMs={50}>
-              Do Caos à{" "}
-              <span className="text-primary">Clareza em 3 Passos Simples</span>
+              Divida Contas Sem Brigas.{" "}
+              <span className="text-primary">Sem Planilhas. Sem Drama.</span>
             </Reveal>
             <Reveal as="p" className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={100}>
-              Chega de planilhas confusas e conversas intermináveis. Gerencie despesas compartilhadas
-              de forma simples, transparente e em tempo real.
+              Ninguém nunca mais vai te chamar de caloteiro. Crie grupos, adicione contas e deixe o Monity calcular quem deve o quê. 
+              Divisões automáticas, transparentes e justas. Cancele planilhas do Google e emails constrangedores para sempre.
             </Reveal>
 
             <div className="space-y-5">

@@ -1,4 +1,4 @@
-import { Brain, Users, Zap, Target, Calendar, BarChart3 } from "lucide-react"
+import { Brain, Users, Zap, Target, Calendar, BarChart3, MessageSquare, TrendingUp } from "lucide-react"
 import { Reveal } from "@/components/reveal"
 
 const features = [
@@ -6,60 +6,84 @@ const features = [
     icon: Brain,
     title: "IA que Aprende Seus Hábitos",
     description:
-      "Pare de perder tempo categorizando manualmente. Nossa IA aprende com suas decisões e passa a sugerir categorias do seu jeito. Ganhe velocidade com sugestões inteligentes, detecção de duplicatas e identificação de assinaturas — automaticamente.",
+      "Cansado de perder horas categorizando cada transação? Nosso assistente de IA aprende com suas decisões e sugere categorias automaticamente. Você economiza tempo e energia enquanto a IA fica mais inteligente a cada uso.",
     keyPoints: [
-      "Auto-categorização com aprendizado contínuo",
-      "Detecção de transações duplicadas", 
-      "Identificação de possíveis assinaturas",
-      "Entrada rápida (<10 segundos por transação)"
+      "Auto-categorização que aprende com você",
+      "Detecção automática de duplicatas", 
+      "Identificação inteligente de assinaturas",
+      "Economize horas - entrada em <10 segundos"
     ]
   },
   {
     icon: Users,
-    title: "Divida Contas Como um Profissional",
+    title: "Divida Contas Sem Brigas",
     description:
-      "Compartilhamento de despesas integrado para colegas de quarto, viagens e custos compartilhados. Crie grupos ilimitados, adicione despesas e deixe o Monity fazer os cálculos. Escolha divisões iguais, percentuais ou valores personalizados. Acompanhe quem deve o quê em tempo real com rastreamento automático de acertos.",
+      "Chega de planilhas confusas e conversas constrangedoras sobre dinheiro. Crie grupos, adicione despesas e deixe o Monity calcular quem deve o quê. Divisões justas automáticas, sem drama e sem estresse.",
     keyPoints: [
-      "Rastreamento de despesas em grupo em tempo real",
-      "Distribuição justa de divisões (igual, %, personalizado)",
-      "Notificações automáticas de dívidas",
-      "Rastreamento de acertos e histórico"
+      "Grupos ilimitados de compartilhamento",
+      "Divisões automáticas (igual, %, personalizado)",
+      "Acompanhe dívidas em tempo real",
+      "Zero conflitos sobre dinheiro"
     ]
   },
   {
     icon: Target,
     title: "Orçamentos que Realmente Funcionam",
     description:
-      "Defina orçamentos por categoria com períodos semanais, mensais, trimestrais ou anuais. Receba alertas ao se aproximar dos limites. Acompanhe múltiplas metas de economia com indicadores visuais de progresso. Aloque fundos, retire quando necessário e veja sua saúde financeira melhorar mês a mês.",
+      "Pare de estourar orçamentos e viver de surpresa em surpresa. Defina limites por categoria e receba alertas antes de gastar demais. Veja sua saúde financeira melhorar mês a mês com metas claras e progresso visível.",
     keyPoints: [
-      "Orçamentos ilimitados (Premium) ou 2 orçamentos (Grátis)",
-      "Comparação orçamento vs. real",
-      "Rastreamento de múltiplas metas de economia",
-      "Indicadores visuais de progresso"
+      "Alertas inteligentes antes de estourar",
+      "2 orçamentos grátis, ilimitados no Premium",
+      "Metas de economia com progresso visual",
+      "Paz de espírito garantida"
     ]
   },
   {
     icon: Calendar,
-    title: "Veja Seu Futuro Financeiro",
+    title: "Veja Seu Futuro Financeiro Agora",
     description:
-      "Interface estilo Google Calendar que visualiza seu saldo ao longo do mês inteiro. Agende transações únicas ou recorrentes com padrões diários, semanais, mensais ou anuais. Veja exatamente qual será seu saldo em qualquer dia. A execução automática de transações mantém você no caminho certo.",
+      "Não fique mais se perguntando se vai sobrar dinheiro no final do mês. Veja seu saldo projetado dia a dia em uma interface estilo calendário. Agende transações recorrentes e nunca mais perca um pagamento.",
     keyPoints: [
-      "Projeção visual do saldo mensal",
-      "Transações agendadas e recorrentes",
-      "Visualização do saldo diário",
-      "Execução automática de pagamentos agendados"
+      "Visualize seu saldo futuro em tempo real",
+      "Automático - sem se preocupar",
+      "Disponível exclusivamente no Premium",
+      "Descubra quanto sobrou antes de gastar"
     ]
   },
   {
     icon: BarChart3,
-    title: "Seu Analista Financeiro Pessoal",
+    title: "Descubra Para Onde Seu Dinheiro Realmente Vai",
     description:
-      "Análise profunda de padrões de gastos alimentada por IA. Receba recomendações personalizadas, detecção de anomalias para gastos incomuns, pontuação de saúde financeira e projeções inteligentes. Veja seu panorama financeiro completo com análises abrangentes e rastreamento de patrimônio líquido.",
+      "Pare de se surpreender no final do mês. Descubra que 40% do seu salário vai para delivery e 20% para assinaturas esquecidas. Veja seus padrões reais de gastos e receba dicas personalizadas para economizar mais.",
     keyPoints: [
-      "Análise de padrões de gastos com IA",
-      "Recomendações personalizadas",
-      "Pontuação de saúde financeira",
-      "Detecção de anomalias e previsões"
+      "Análise profunda com IA dos seus gastos",
+      "Score de saúde financeira em tempo real",
+      "Dicas personalizadas de economia",
+      "Controle sobre cada centavo"
+    ]
+  },
+  {
+    icon: MessageSquare,
+    title: "Seu Consultor Financeiro Pessoal com IA",
+    description:
+      "Dúvidas sobre suas finanças às 2h da manhã? Nosso assistente de IA está sempre disponível para responder perguntas, dar conselhos personalizados e ajudar você a tomar decisões melhores. É como ter um consultor financeiro no bolso, 24/7.",
+    keyPoints: [
+      "Respostas instantâneas sobre seus gastos",
+      "Conselhos personalizados baseados no seu perfil",
+      "3 mensagens/dia grátis, ilimitado no Premium",
+      "Aprende com suas finanças para dar dicas melhores"
+    ]
+  },
+  {
+    icon: TrendingUp,
+    title: "Veja Seu Dinheiro Crescer com o Tempo",
+    description:
+      "Quanto você terá daqui a 5 anos? E se investir R$ 500 por mês? Nossa calculadora de investimentos mostra exatamente quanto seu dinheiro pode crescer com juros compostos. Planeje seu futuro financeiro com clareza e confiança.",
+    keyPoints: [
+      "Simulações de investimento com juros compostos",
+      "Compare diferentes cenários de investimento",
+      "2 simulações/mês grátis, ilimitadas no Premium",
+      "Visualize seu crescimento financeiro ao longo do tempo"
     ]
   },
   {

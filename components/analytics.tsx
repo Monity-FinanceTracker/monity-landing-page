@@ -4,23 +4,23 @@ import { Reveal } from "@/components/reveal"
 const analyticsCards = [
   {
     icon: BarChart3,
-    title: "Onde vai seu dinheiro",
-    description: "Visualize gastos por categoria com gráficos claros e intuitivos.",
+    title: "Descubra Para Onde Seu Dinheiro Realmente Vai",
+    description: "Veja que você gasta R$ 500/mês com delivery sem nem perceber. Breakdown visual por categoria com números que assustam—e motivam mudanças.",
   },
   {
     icon: PieChart,
-    title: "Orçamentos que funcionam",
-    description: "Acompanhe metas em tempo real com alertas inteligentes.",
+    title: "Alertas Antes de Estourar",
+    description: "Saiba 3 dias antes de bater o limite. Alertas inteligentes te salvam de decisões ruins no impulso do momento.",
   },
   {
     icon: LineChart,
-    title: "Tendências reveladas",
-    description: "Identifique padrões e preveja despesas antes que aconteçam.",
+    title: "Preveja e Planeje",
+    description: "Veja tendências de gastos e saiba exatamente o que vai acontecer financeiramente no próximo mês. Sem surpresas.",
   },
   {
     icon: Activity,
-    title: "Score de saúde",
-    description: "Uma métrica simples que mostra como estão suas finanças.",
+    title: "Score de Saúde Financeira",
+    description: "De 0 a 100, saiba se suas finanças estão no caminho certo. Dicas personalizadas para melhorar seu score mês a mês.",
   },
 ]
 
@@ -33,11 +33,13 @@ export function Analytics() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
           <Reveal as="h2" className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up">
-            Dados que <span className="text-primary">realmente importam</span>
+            Decisões Financeiras Inteligentes,{" "}
+            <span className="text-primary">Baseadas em Dados Reais</span>
           </Reveal>
           <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
-            Não são apenas números—são insights acionáveis que ajudam você a tomar decisões financeiras mais
-            inteligentes todos os dias.
+            Descubra que 40% do seu salário vai para delivery e 20% para assinaturas esquecidas. 
+            Veja tendências, identifique oportunidades e tome decisões com confiança total. 
+            Os dados nunca mentem—agora você tem acesso a eles.
           </Reveal>
         </div>
 

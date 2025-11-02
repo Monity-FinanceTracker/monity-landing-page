@@ -16,22 +16,24 @@ export function Hero() {
             <Sparkles className="h-4 w-4 animate-pulse" />
             <span className="font-semibold">90%+ Precisão IA</span>
             <span className="text-muted-foreground">•</span>
+            <span className="font-semibold">Assistente IA Gratuito</span>
+            <span className="text-muted-foreground">•</span>
             <span className="font-semibold">Entrada em 10s</span>
           </Reveal>
 
           {/* Improved headline with better hierarchy */}
           <Reveal as="h1" className="mb-6 text-balance text-5xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-6xl lg:text-7xl" direction="up" delayMs={50}>
-            Orçamento Rápido Feito{" "}
+            Pare de Se Preocupar com Dinheiro.{" "}
             <span className="bg-gradient-to-r from-primary via-emerald-500 to-primary bg-clip-text text-transparent">
-              Inteligente
+              Comece a Viver.
             </span>
           </Reveal>
 
           {/* Enhanced subheadline */}
           <Reveal as="p" className="mb-12 text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl max-w-3xl mx-auto" direction="up" delayMs={100}>
-            Rastreador de finanças pessoais com IA que aprende seus hábitos de gastos,
-            categoriza transações automaticamente e até divide despesas com amigos.
-            Tenha o panorama financeiro completo em menos de 10 segundos por transação.
+            Tenha controle total das suas finanças, planeje investimentos inteligentes e divida contas sem drama. 
+            Com IA que aprende seus hábitos e insights instantâneos, você finalmente vai saber exatamente para onde seu dinheiro vai — 
+            e ter um futuro financeiro claro.
           </Reveal>
 
           {/* CTA buttons with improved styling */}
@@ -62,7 +64,7 @@ export function Hero() {
           <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm">
             <Reveal as="div" className="flex items-center gap-2 text-muted-foreground" direction="up" delayMs={250}>
               <Check className="h-4 w-4 text-primary" strokeWidth={3} />
-              <span>Plano gratuito</span>
+              <span>Plano gratuito disponível</span>
             </Reveal>
             <Reveal as="div" className="flex items-center gap-2 text-muted-foreground" direction="up" delayMs={300}>
               <Check className="h-4 w-4 text-primary" strokeWidth={3} />

@@ -1,4 +1,4 @@
-import { CheckCircle2, TrendingUp, AlertCircle, Target } from "lucide-react"
+import { CheckCircle2, TrendingUp, AlertCircle, Target, MessageSquare } from "lucide-react"
 import { Reveal } from "@/components/reveal"
 
 const aiFeatures = [
@@ -9,10 +9,10 @@ const aiFeatures = [
     metric: "Economize 10+ horas por mês em entrada de dados"
   },
   {
-    icon: TrendingUp,
-    title: "Divisão de Despesas em Grupo, Integrada",
-    description: "O único rastreador financeiro com divisão de despesas em tempo real. Compartilhe custos com colegas de quarto, amigos ou família. Distribuição justa de divisões, rastreamento automático de dívidas e notificações instantâneas de acertos. Chega de mensagens constrangedoras de 'você me deve'.",
-    metric: "Divida despesas em grupos ilimitados"
+    icon: MessageSquare,
+    title: "Assistente IA que Responde 24/7",
+    description: "Perguntou alguma coisa às 2h da manhã? Nosso assistente IA responde instantaneamente. 'Como posso economizar mais?', 'Vale a pena essa assinatura?', 'Quando vou atingir minha meta?'. Pergunte qualquer coisa sobre suas finanças e receba respostas inteligentes baseadas nos seus dados reais.",
+    metric: "3 mensagens grátis/dia, ilimitado no Premium"
   },
   {
     icon: AlertCircle,
@@ -47,12 +47,12 @@ export function AIShowcase() {
             </Reveal>
 
             <Reveal as="h2" className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up" delayMs={50}>
-              O Único Rastreador Financeiro que{" "}
-              <span className="text-primary">Fica Mais Inteligente a Cada Transação</span>
+              Chega de Planilhas. Chega de Estresse.{" "}
+              <span className="text-primary">Só Clareza.</span>
             </Reveal>
             <Reveal as="p" className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={100}>
-              Nossa IA não apenas categoriza transações—ela aprende seus hábitos, antecipa suas necessidades e
-              oferece insights cada vez mais precisos ao longo do tempo.
+              Descubra que você gasta R$ 400/mês com delivery sem nem perceber. Saiba exatamente onde cada centavo vai. 
+              Tome decisões financeiras baseadas em dados reais, não em suposições. A IA aprende com você e antecipa suas necessidades.
             </Reveal>
 
             <div className="space-y-5">
@@ -81,8 +81,8 @@ export function AIShowcase() {
                 <div className="text-xs text-muted-foreground mt-1">Por Transação</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">500+</div>
-                <div className="text-xs text-muted-foreground mt-1">Traduções</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">24/7</div>
+                <div className="text-xs text-muted-foreground mt-1">Assistente IA</div>
               </div>
             </div>
           </div>

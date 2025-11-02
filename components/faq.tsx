@@ -27,6 +27,14 @@ const faqs = [
     answer: "Exclusivo do Premium, o Calendário de Fluxo de Caixa é uma interface estilo Google Calendar que mostra seu saldo projetado para cada dia do mês. Agende transações únicas ou recorrentes (diárias, semanais, mensais, anuais) e veja exatamente qual será seu saldo em qualquer dia. As transações executam automaticamente, então você nunca perde um pagamento ou entrada de orçamento."
   },
   {
+    question: "Como funciona o Assistente de IA Financeiro?",
+    answer: "Nosso Assistente de IA oferece conselhos financeiros personalizados baseados nos seus gastos, orçamentos e metas. Faça perguntas sobre suas finanças, receba recomendações sobre como economizar mais e entenda seus padrões de gastos. Usuários gratuitos têm 3 mensagens por dia, enquanto membros Premium têm acesso ilimitado."
+  },
+  {
+    question: "O que é o Calculador de Investimentos?",
+    answer: "Calcule quanto seu dinheiro pode crescer ao longo do tempo com diferentes cenários de investimento. Veja projeções de juros compostos, saiba quanto investir mensalmente para atingir metas e compare diferentes estratégias. Usuários gratuitos têm 2 simulações por mês, e Premium oferece simulações ilimitadas."
+  },
+  {
     question: "Posso exportar meus dados?",
     answer: "Sim. Você pode levar seus dados com você a qualquer momento, exportando históricos, orçamentos e relatórios de forma simples. Seus dados são sempre seus."
   },
