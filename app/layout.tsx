@@ -13,6 +13,10 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Monity - AI-Powered Personal Finance Tracker",
+  icons: {
+    icon: "/monity-logo.png",
+    apple: "/monity-logo.png",
+  },
   description:
     "Make budgeting delightfully fast, powerfully intelligent, and totally transparent with AI-powered expense tracking and group collaboration.",
   generator: "v0.app",
