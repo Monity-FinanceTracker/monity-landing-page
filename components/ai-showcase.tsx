@@ -5,26 +5,26 @@ const aiFeatures = [
   {
     icon: CheckCircle2,
     title: "Categorização Verdadeiramente Inteligente",
-    description: "Pare de marcar manualmente cada compra de café. Nossa IA treinada personalizada aprende seus padrões únicos de gastos e categoriza transações automaticamente com 90%+ de precisão. Quanto mais você usa, mais inteligente fica.",
-    metric: "Economize 10+ horas por mês em entrada de dados"
+    description: "IA que aprende seus padrões e categoriza automaticamente com 90%+ de precisão. Quanto mais usa, mais inteligente fica.",
+    metric: "Economize 10+ horas por mês"
   },
   {
     icon: MessageSquare,
     title: "Assistente IA que Responde 24/7",
-    description: "Perguntou alguma coisa às 2h da manhã? Nosso assistente IA responde instantaneamente. 'Como posso economizar mais?', 'Vale a pena essa assinatura?', 'Quando vou atingir minha meta?'. Pergunte qualquer coisa sobre suas finanças e receba respostas inteligentes baseadas nos seus dados reais.",
+    description: "Respostas instantâneas sobre suas finanças. Pergunte qualquer coisa e receba conselhos baseados nos seus dados reais.",
     metric: "3 mensagens grátis/dia, ilimitado no Premium"
   },
   {
     icon: AlertCircle,
     title: "Deliciosamente Rápido de Usar",
-    description: "Interface moderna em modo escuro feita para ser rápida e simples. Adicione transações em menos de 10 segundos, veja tudo sincronizado em tempo real e aproveite uma experiência suave pensada para o seu dia a dia.",
-    metric: "Meta de entrada de transação <10 segundos"
+    description: "Adicione transações em menos de 10 segundos. Interface moderna, sincronização em tempo real.",
+    metric: "Meta <10 segundos por transação"
   },
   {
     icon: Target,
     title: "Inteligência Alimentada por IA",
-    description: "Análise profunda de padrões de gastos alimentada por IA. Receba recomendações personalizadas, detecção de anomalias para gastos incomuns, pontuação de saúde financeira e projeções inteligentes.",
-    metric: "90%+ de precisão com aprendizado contínuo"
+    description: "Análise profunda de padrões de gastos. Recomendações personalizadas, detecção de anomalias e projeções inteligentes.",
+    metric: "90%+ de precisão"
   },
 ]
 
@@ -51,8 +51,8 @@ export function AIShowcase() {
               <span className="text-primary">Só Clareza.</span>
             </Reveal>
             <Reveal as="p" className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={100}>
-              Descubra que você gasta R$ 400/mês com delivery sem nem perceber. Saiba exatamente onde cada centavo vai. 
-              Tome decisões financeiras baseadas em dados reais, não em suposições. A IA aprende com você e antecipa suas necessidades.
+              Descubra onde cada centavo vai. Decisões baseadas em dados reais, não suposições. 
+              IA que aprende com você.
             </Reveal>
 
             <div className="space-y-5">

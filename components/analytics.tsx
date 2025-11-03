@@ -5,7 +5,7 @@ const analyticsCards = [
   {
     icon: BarChart3,
     title: "Descubra Para Onde Seu Dinheiro Realmente Vai",
-    description: "Veja que você gasta R$ 500/mês com delivery sem nem perceber. Breakdown visual por categoria com números que assustam—e motivam mudanças.",
+    description: "Breakdown visual por categoria. Veja exatamente onde cada centavo vai.",
   },
   {
     icon: PieChart,
@@ -37,9 +37,7 @@ export function Analytics() {
             <span className="text-primary">Baseadas em Dados Reais</span>
           </Reveal>
           <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
-            Descubra que 40% do seu salário vai para delivery e 20% para assinaturas esquecidas. 
-            Veja tendências, identifique oportunidades e tome decisões com confiança total. 
-            Os dados nunca mentem—agora você tem acesso a eles.
+            Descubra seus padrões reais de gastos. Veja tendências e tome decisões com confiança total.
           </Reveal>
         </div>
 

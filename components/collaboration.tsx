@@ -6,22 +6,22 @@ const collaborationFeatures = [
     icon: Users,
     title: "Comece em 30 Segundos",
     description:
-      "Crie sua conta grátis e escolha sua moeda. Convide amigos para grupos de compartilhamento de despesas. Sem complicação, sem planilhas, sem chat de WhatsApp constrangedor.",
+      "Crie sua conta grátis e convide amigos. Sem complicação, sem planilhas.",
   },
   {
     icon: UserPlus,
     title: "Adicione Despesas em Segundos",
-    description: "Almoço com amigos? Farmácia compartilhada? Crie a despesa, escolha quem pagou e como dividir. A IA sugere automaticamente e você aprova com um clique. Simples assim.",
+    description: "Crie a despesa, escolha quem pagou e como dividir. A IA sugere automaticamente.",
   },
   {
     icon: Receipt,
     title: "Todos Veem Tudo em Tempo Real",
-    description: "Chega de ficar calculando no papel. Todos do grupo veem quem deve o quê, instantaneamente. Dashboard transparente, histórico completo e dívidas sempre atualizadas.",
+    description: "Todos do grupo veem quem deve o quê, instantaneamente. Dashboard transparente e histórico completo.",
   },
   {
     icon: DollarSign,
     title: "Marque Como Pago e Siga Sua Vida",
-    description: "Quando alguém paga o que devia, um clique e pronto. O sistema recalcula tudo automaticamente. Relacionamentos preservados, amizades fortalecidas.",
+    description: "Um clique e pronto. O sistema recalcula tudo automaticamente.",
   },
 ]
 
@@ -57,8 +57,8 @@ export function Collaboration() {
               <span className="text-primary">Sem Planilhas. Sem Drama.</span>
             </Reveal>
             <Reveal as="p" className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={100}>
-              Ninguém nunca mais vai te chamar de caloteiro. Crie grupos, adicione contas e deixe o Monity calcular quem deve o quê. 
-              Divisões automáticas, transparentes e justas. Cancele planilhas do Google e emails constrangedores para sempre.
+              Crie grupos, adicione contas e deixe o Monity calcular quem deve o quê. 
+              Divisões automáticas e transparentes. Chega de planilhas e conversas constrangedoras.
             </Reveal>
 
             <div className="space-y-5">

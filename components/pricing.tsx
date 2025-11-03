@@ -28,16 +28,16 @@ const plans = [
     name: "Premium",
     price: "R$ 9,90",
     period: "/mês",
-    description: "Desbloqueie todo o poder da inteligência financeira alimentada por IA. Para mestres do orçamento.",
+    description: "Desbloqueie poder ilimitado com IA. Para quem quer dominar suas finanças.",
     features: [
       "Tudo do Grátis, mais:",
       "**Orçamentos ilimitados**",
       "**Metas de economia ilimitadas**",
       "**Assistente de IA ilimitado** (mensagens ilimitadas)",
       "**Simulações de investimento ilimitadas**",
-      "**Calendário de Fluxo de Caixa** (agende transações, veja saldo futuro)",
-      "**Insights avançados de IA** (padrões de gastos, detecção de anomalias)",
-      "**Pontuação de saúde financeira** com recomendações personalizadas",
+      "**Calendário de Fluxo de Caixa**",
+      "**Insights avançados de IA**",
+      "**Pontuação de saúde financeira**",
       "**Análises profundas e previsões**",
       "**Exportação de dados**",
       "**Relatórios prontos para imposto**",
@@ -130,9 +130,7 @@ export function Pricing() {
 
         <Reveal as="div" className="mt-16 text-center" direction="up" delayMs={150}>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            Cancele a qualquer momento.
-            <br />
-            Todos os planos incluem segurança de nível empresarial, garantia de 99,9% de disponibilidade e atualizações automáticas.
+            Cancele a qualquer momento. Segurança de nível empresarial.
           </p>
         </Reveal>
       </div>

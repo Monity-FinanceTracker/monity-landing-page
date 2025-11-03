@@ -31,9 +31,8 @@ export function Hero() {
 
           {/* Enhanced subheadline */}
           <Reveal as="p" className="mb-12 text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl max-w-3xl mx-auto" direction="up" delayMs={100}>
-            Tenha controle total das suas finanças, planeje investimentos inteligentes e divida contas sem drama. 
-            Com IA que aprende seus hábitos e insights instantâneos, você finalmente vai saber exatamente para onde seu dinheiro vai — 
-            e ter um futuro financeiro claro.
+            Controle total das suas finanças com IA que aprende seus hábitos. 
+            Saiba exatamente para onde seu dinheiro vai e planeje seu futuro.
           </Reveal>
 
           {/* CTA buttons with improved styling */}

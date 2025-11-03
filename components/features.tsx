@@ -6,11 +6,9 @@ const features = [
     icon: Brain,
     title: "IA que Aprende Seus Hábitos",
     description:
-      "Cansado de perder horas categorizando cada transação? Nosso assistente de IA aprende com suas decisões e sugere categorias automaticamente. Você economiza tempo e energia enquanto a IA fica mais inteligente a cada uso.",
+      "Categorização automática que aprende com você. Economize horas enquanto a IA fica mais inteligente a cada uso.",
     keyPoints: [
-      "Auto-categorização que aprende com você",
-      "Detecção automática de duplicatas", 
-      "Identificação inteligente de assinaturas",
+      "Auto-categorização inteligente",
       "Economize horas - entrada em <10 segundos"
     ]
   },
@@ -18,84 +16,70 @@ const features = [
     icon: Users,
     title: "Divida Contas Sem Brigas",
     description:
-      "Chega de planilhas confusas e conversas constrangedoras sobre dinheiro. Crie grupos, adicione despesas e deixe o Monity calcular quem deve o quê. Divisões justas automáticas, sem drama e sem estresse.",
+      "Crie grupos, adicione despesas e deixe o Monity calcular automaticamente. Divisões justas, sem drama.",
     keyPoints: [
-      "Grupos ilimitados de compartilhamento",
-      "Divisões automáticas (igual, %, personalizado)",
-      "Acompanhe dívidas em tempo real",
-      "Zero conflitos sobre dinheiro"
+      "Grupos ilimitados",
+      "Divisões automáticas em tempo real"
     ]
   },
   {
     icon: Target,
     title: "Orçamentos que Realmente Funcionam",
     description:
-      "Pare de estourar orçamentos e viver de surpresa em surpresa. Defina limites por categoria e receba alertas antes de gastar demais. Veja sua saúde financeira melhorar mês a mês com metas claras e progresso visível.",
+      "Defina limites e receba alertas antes de estourar. Metas claras, progresso visível.",
     keyPoints: [
-      "Alertas inteligentes antes de estourar",
-      "2 orçamentos grátis, ilimitados no Premium",
-      "Metas de economia com progresso visual",
-      "Paz de espírito garantida"
+      "Alertas inteligentes",
+      "2 orçamentos grátis, ilimitados no Premium"
     ]
   },
   {
     icon: Calendar,
     title: "Veja Seu Futuro Financeiro Agora",
     description:
-      "Não fique mais se perguntando se vai sobrar dinheiro no final do mês. Veja seu saldo projetado dia a dia em uma interface estilo calendário. Agende transações recorrentes e nunca mais perca um pagamento.",
+      "Saldo projetado dia a dia. Agende transações recorrentes e nunca mais perca um pagamento.",
     keyPoints: [
-      "Visualize seu saldo futuro em tempo real",
-      "Automático - sem se preocupar",
-      "Disponível exclusivamente no Premium",
-      "Descubra quanto sobrou antes de gastar"
+      "Visualize seu saldo futuro",
+      "Exclusivo Premium"
     ]
   },
   {
     icon: BarChart3,
     title: "Descubra Para Onde Seu Dinheiro Realmente Vai",
     description:
-      "Pare de se surpreender no final do mês. Descubra que 40% do seu salário vai para delivery e 20% para assinaturas esquecidas. Veja seus padrões reais de gastos e receba dicas personalizadas para economizar mais.",
+      "Descubra seus padrões reais de gastos e receba dicas personalizadas para economizar mais.",
     keyPoints: [
-      "Análise profunda com IA dos seus gastos",
-      "Score de saúde financeira em tempo real",
-      "Dicas personalizadas de economia",
-      "Controle sobre cada centavo"
+      "Análise profunda com IA",
+      "Score de saúde financeira"
     ]
   },
   {
     icon: MessageSquare,
     title: "Seu Consultor Financeiro Pessoal com IA",
     description:
-      "Dúvidas sobre suas finanças às 2h da manhã? Nosso assistente de IA está sempre disponível para responder perguntas, dar conselhos personalizados e ajudar você a tomar decisões melhores. É como ter um consultor financeiro no bolso, 24/7.",
+      "Assistente disponível 24/7. Respostas instantâneas e conselhos personalizados sobre suas finanças.",
     keyPoints: [
-      "Respostas instantâneas sobre seus gastos",
-      "Conselhos personalizados baseados no seu perfil",
-      "3 mensagens/dia grátis, ilimitado no Premium",
-      "Aprende com suas finanças para dar dicas melhores"
+      "Respostas instantâneas",
+      "3 mensagens/dia grátis, ilimitado no Premium"
     ]
   },
   {
     icon: TrendingUp,
     title: "Veja Seu Dinheiro Crescer com o Tempo",
     description:
-      "Quanto você terá daqui a 5 anos? E se investir R$ 500 por mês? Nossa calculadora de investimentos mostra exatamente quanto seu dinheiro pode crescer com juros compostos. Planeje seu futuro financeiro com clareza e confiança.",
+      "Calcule quanto seu dinheiro pode crescer com juros compostos. Planeje seu futuro com clareza.",
     keyPoints: [
-      "Simulações de investimento com juros compostos",
-      "Compare diferentes cenários de investimento",
-      "2 simulações/mês grátis, ilimitadas no Premium",
-      "Visualize seu crescimento financeiro ao longo do tempo"
+      "Simulações com juros compostos",
+      "2 simulações/mês grátis, ilimitadas no Premium"
     ]
   },
   {
     icon: Zap,
     title: "Controle Financeiro que Você Vai Adorar",
     description:
-      "Interface rápida, fluida e agradável de usar no dia a dia. Visual limpo em modo escuro, responsivo desde o primeiro toque, com animações suaves e gráficos claros para decisões melhores em menos tempo.",
+      "Interface rápida e intuitiva. Visual limpo, modo escuro e totalmente responsivo.",
     keyPoints: [
-      "Design responsivo mobile-first",
-      "Otimizado para modo escuro",
-      "Carregamento rápido com stack tecnológico moderno",
-      "Acessível e internacionalizado"
+      "Mobile-first",
+      "Rápido e acessível"
     ]
   },
 ]
@@ -113,8 +97,7 @@ export function Features() {
             <span className="text-primary">Dominar Seu Dinheiro</span>
           </Reveal>
           <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
-            De insights alimentados por IA ao rastreamento colaborativo de despesas,
-            o Monity combina as melhores ferramentas de finanças pessoais em uma plataforma linda.
+            IA inteligente. Divisão de contas. Insights em tempo real. Tudo em um só lugar.
           </Reveal>
         </div>
 
