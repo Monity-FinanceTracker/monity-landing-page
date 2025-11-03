@@ -48,7 +48,7 @@ export function FAQ() {
   return (
     <section id="faq" className="py-20 sm:py-28 bg-muted/20 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_50%,rgba(1,195,141,0.05),transparent_70%)]" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_50%,rgba(71,160,155,0.05),transparent_70%)]" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
@@ -67,7 +67,7 @@ export function FAQ() {
               <Reveal key={index} delayMs={index * 70}>
                 <AccordionItem 
                   value={`item-${index}`}
-                  className="rounded-2xl border border-border/50 bg-card/50 p-6 backdrop-blur-sm hover:border-primary/30 transition-colors"
+                  className="rounded-2xl border border-border/50 bg-gradient-to-br from-card/80 via-card/60 to-card/80 p-6 backdrop-blur-sm hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 transition-all ring-1 ring-border/20 hover:ring-primary/20"
                 >
                   <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline">
                     {faq.question}

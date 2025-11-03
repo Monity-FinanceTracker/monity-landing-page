@@ -6,8 +6,8 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28 bg-background">
       {/* Enhanced gradient background */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(1,195,141,0.2),transparent)]" />
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_40%_at_80%_60%,rgba(1,195,141,0.08),transparent)]" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(71,160,155,0.2),transparent)]" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_40%_at_80%_60%,rgba(71,160,155,0.08),transparent)]" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
@@ -24,7 +24,7 @@ export function Hero() {
           {/* Improved headline with better hierarchy */}
           <Reveal as="h1" className="mb-6 text-balance text-5xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-6xl lg:text-7xl" direction="up" delayMs={50}>
             Pare de Se Preocupar com Dinheiro.{" "}
-            <span className="bg-gradient-to-r from-primary via-emerald-500 to-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] bg-clip-text text-transparent drop-shadow-sm">
               Comece a Viver.
             </span>
           </Reveal>
@@ -41,7 +41,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="group relative overflow-hidden bg-gradient-to-r from-primary to-emerald-600 text-white hover:shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-0.5"
+              className="group relative overflow-hidden bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] text-white hover:shadow-2xl hover:shadow-primary/40 transition-all hover:-translate-y-1 before:absolute before:inset-0 before:bg-gradient-to-r before:from-primary/0 before:via-white/10 before:to-primary/0 before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-1000"
             >
               <a href="https://firstmonity.vercel.app/signup">
                 <span className="relative z-10 flex items-center">
@@ -75,8 +75,9 @@ export function Hero() {
 
         {/* Enhanced dashboard preview */}
         <Reveal as="div" className="mt-20 relative group" direction="up" delayMs={200}>
-          <div className="absolute -inset-1 bg-gradient-to-r from-primary to-emerald-600 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity" />
-          <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/10 backdrop-blur-sm">
+          <div className="absolute -inset-2 bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] rounded-2xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity" />
+          <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-[#55B8B2]/10 to-[#3A8A85]/20 rounded-2xl blur-lg opacity-60 group-hover:opacity-80 transition-opacity" />
+          <div className="relative rounded-2xl border border-primary/30 bg-gradient-to-br from-card/90 via-card/70 to-card/90 p-2 shadow-2xl shadow-primary/20 backdrop-blur-sm ring-1 ring-primary/20">
             <img
               src="/WhatsApp Image 2025-10-24 at 00.48.45.jpeg"
               alt="Dashboard Monity - Rastreador de finanças pessoais com IA e interface modo escuro"

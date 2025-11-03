@@ -32,7 +32,7 @@ export function AIShowcase() {
   return (
     <section id="ai" className="py-20 sm:py-28 bg-muted/20 relative overflow-hidden">
       {/* Enhanced background gradients */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_70%_50%,rgba(1,195,141,0.08),transparent_70%)]" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_70%_50%,rgba(71,160,155,0.08),transparent_70%)]" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
@@ -57,8 +57,8 @@ export function AIShowcase() {
 
             <div className="space-y-5">
               {aiFeatures.map((feature, i) => (
-                <Reveal key={feature.title} className="group flex gap-4 p-4 rounded-xl hover:bg-muted/30 transition-colors" delayMs={i * 80}>
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:scale-110 transition-transform">
+                <Reveal key={feature.title} className="group flex gap-4 p-4 rounded-xl hover:bg-gradient-to-r hover:from-muted/40 hover:via-primary/5 hover:to-muted/40 transition-all hover:shadow-lg hover:shadow-primary/10" delayMs={i * 80}>
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-primary/20 via-[#55B8B2]/15 to-[#3A8A85]/20 text-primary group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:via-[#55B8B2] group-hover:to-[#3A8A85] group-hover:text-white group-hover:shadow-md group-hover:shadow-primary/30 transition-all">
                     <feature.icon className="h-5 w-5" />
                   </div>
                   <div>
@@ -73,15 +73,15 @@ export function AIShowcase() {
             {/* Enhanced stats card */}
             <div className="mt-10 grid grid-cols-3 gap-4 rounded-2xl border border-border/50 bg-card/50 p-6 backdrop-blur-sm">
               <div className="text-center">
-                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">90%+</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] bg-clip-text text-transparent drop-shadow-sm">90%+</div>
                 <div className="text-xs text-muted-foreground mt-1">Precisão IA</div>
               </div>
               <div className="text-center border-x border-border/50">
-                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">&lt;10s</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] bg-clip-text text-transparent drop-shadow-sm">&lt;10s</div>
                 <div className="text-xs text-muted-foreground mt-1">Por Transação</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">24/7</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] bg-clip-text text-transparent drop-shadow-sm">24/7</div>
                 <div className="text-xs text-muted-foreground mt-1">Assistente IA</div>
               </div>
             </div>
@@ -89,8 +89,8 @@ export function AIShowcase() {
 
           <Reveal className="relative group lg:order-last order-first" direction="left" delayMs={150}>
             {/* Enhanced glow effect */}
-            <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-emerald-500/10 to-transparent blur-3xl opacity-50 group-hover:opacity-70 transition-opacity" />
-            <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/10 backdrop-blur-sm hover:border-primary/30 transition-colors">
+            <div className="absolute -inset-4 bg-gradient-to-br from-primary/30 via-[#55B8B2]/20 to-[#3A8A85]/15 blur-3xl opacity-60 group-hover:opacity-80 transition-opacity" />
+            <div className="relative rounded-2xl border border-primary/30 bg-gradient-to-br from-card/90 via-card/70 to-card/90 p-2 shadow-2xl shadow-primary/20 backdrop-blur-sm hover:border-primary/40 transition-all ring-1 ring-primary/20 hover:ring-primary/30">
               <img
                 src="/Screenshot 2025-10-24 at 00.56.29.png"
                 alt="Calendário de Fluxo de Caixa - Visualize seu saldo ao longo do tempo"

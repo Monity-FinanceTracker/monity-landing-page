@@ -29,14 +29,14 @@ export function Collaboration() {
   return (
     <section className="py-20 sm:py-28 bg-background relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_50%,rgba(1,195,141,0.05),transparent_50%)]" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_50%,rgba(71,160,155,0.05),transparent_50%)]" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
           <Reveal className="order-2 lg:order-1 relative group" direction="right" delayMs={150}>
             {/* Enhanced glow effect */}
-            <div className="absolute -inset-4 bg-gradient-to-br from-emerald-500/15 via-primary/10 to-transparent blur-3xl opacity-50 group-hover:opacity-70 transition-opacity" />
-            <div className="relative rounded-2xl border border-primary/20 bg-card/50 p-2 shadow-2xl shadow-primary/5 backdrop-blur-sm hover:border-primary/30 transition-colors">
+            <div className="absolute -inset-4 bg-gradient-to-br from-primary/25 via-[#55B8B2]/15 to-[#3A8A85]/10 blur-3xl opacity-60 group-hover:opacity-80 transition-opacity" />
+            <div className="relative rounded-2xl border border-primary/30 bg-gradient-to-br from-card/90 via-card/70 to-card/90 p-2 shadow-2xl shadow-primary/20 backdrop-blur-sm hover:border-primary/40 transition-all ring-1 ring-primary/20 hover:ring-primary/30">
               <img
                 src="/Screenshot 2025-10-19 at 23.31.34.png"
                 alt="Interface de divisão de despesas em grupo com múltiplos usuários"
@@ -47,7 +47,7 @@ export function Collaboration() {
 
           <div className="order-1 lg:order-2">
             {/* Enhanced badge */}
-            <Reveal as="div" className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/5 px-4 py-2 text-sm font-medium text-emerald-600 dark:text-emerald-400 backdrop-blur-sm" direction="up">
+            <Reveal as="div" className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-medium text-primary backdrop-blur-sm" direction="up">
               <Sparkles className="h-4 w-4" />
               <span>O Único com Divisão de Contas Integrada</span>
             </Reveal>
@@ -63,8 +63,8 @@ export function Collaboration() {
 
             <div className="space-y-5">
               {collaborationFeatures.map((feature, i) => (
-                <Reveal key={feature.title} className="group flex gap-4 p-4 rounded-xl hover:bg-muted/30 transition-colors" delayMs={i * 80}>
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform">
+                <Reveal key={feature.title} className="group flex gap-4 p-4 rounded-xl hover:bg-gradient-to-r hover:from-muted/40 hover:via-primary/5 hover:to-muted/40 transition-all hover:shadow-lg hover:shadow-primary/10" delayMs={i * 80}>
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-primary/20 via-[#55B8B2]/15 to-[#3A8A85]/20 text-primary group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:via-[#55B8B2] group-hover:to-[#3A8A85] group-hover:text-white group-hover:shadow-md group-hover:shadow-primary/30 transition-all">
                     <feature.icon className="h-5 w-5" />
                   </div>
                   <div>
