@@ -42,7 +42,7 @@ export function Hero() {
               size="lg"
               className="group relative overflow-hidden bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] text-white hover:shadow-2xl hover:shadow-primary/40 transition-all hover:-translate-y-1 before:absolute before:inset-0 before:bg-gradient-to-r before:from-primary/0 before:via-white/10 before:to-primary/0 before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-1000"
             >
-              <a href="https://firstmonity.vercel.app/signup">
+              <a href="https://app.monity-finance.com/signup">
                 <span className="relative z-10 flex items-center">
                   Começar Grátis →
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
