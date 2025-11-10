@@ -22,21 +22,21 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="https://x.com/firstmonity"
                 className="text-muted-foreground transition-all hover:text-primary hover:scale-110"
                 aria-label="Twitter/X"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/monity.app"
                 className="text-muted-foreground transition-all hover:text-primary hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@monity.app"
                 className="text-muted-foreground transition-all hover:text-primary hover:scale-110"
                 aria-label="TikTok"
               >

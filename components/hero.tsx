@@ -49,14 +49,6 @@ export function Hero() {
                 </span>
               </a>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-border/60 text-foreground hover:bg-muted/50 bg-background/50 backdrop-blur-sm transition-all hover:-translate-y-0.5"
-            >
-              <a href="https://firstmonity.vercel.app/signup">Ver Como Funciona</a>
-            </Button>
           </Reveal>
 
           {/* Enhanced trust indicators */}
