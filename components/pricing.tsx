@@ -7,7 +7,7 @@ const plans = [
     name: "Gratuito",
     price: "R$ 0",
     period: "/mês",
-    description: "Tudo que você precisa para começar a controlar suas finanças.",
+    description: "Sim, TUDO isso de graça. Sem cartão. Sem pegadinhas. Sem tempo limite.",
     features: [
       "Rastreamento ilimitado de transações",
       "Categorização alimentada por IA",
@@ -21,14 +21,14 @@ const plans = [
       "Dashboard responsivo para mobile",
       "Interface modo escuro",
     ],
-    cta: "Começar Grátis →",
+    cta: "Começar Grátis - Sem Cartão →",
     highlighted: false,
   },
   {
     name: "Premium",
     price: "R$ 9,90",
     period: "/mês",
-    description: "Desbloqueie poder ilimitado com IA. Para quem quer dominar suas finanças.",
+    description: "Menos que 2 cafés por mês. Economize 100x mais que isso. Desbloqueie poder ilimitado com IA.",
     features: [
       "Tudo do Grátis, mais:",
       "**Orçamentos ilimitados**",
@@ -43,7 +43,7 @@ const plans = [
       "**Relatórios prontos para imposto**",
       "**Suporte premium**",
     ],
-    cta: "Começar Teste Grátis de 7 Dias →",
+    cta: "Testar Premium 7 Dias Grátis - Cancele Quando Quiser →",
     highlighted: true,
   },
 ]
@@ -57,10 +57,11 @@ export function Pricing() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
           <Reveal as="h2" className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up">
-            Comece Grátis, <span className="text-primary">Evolua Quando Quiser</span>
+            Grátis Para Sempre. <span className="text-primary">Premium Quando Quiser Mais Poder.</span>
           </Reveal>
           <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
-            Experimente todos os recursos principais grátis. Desbloqueie poder ilimitado com Premium.
+            Experimente todos os recursos principais grátis. Sem cartão. Sem tempo limite.
+            Desbloqueie poder ilimitado com Premium quando estiver pronto.
           </Reveal>
         </div>
 
@@ -130,7 +131,7 @@ export function Pricing() {
 
         <Reveal as="div" className="mt-16 text-center" direction="up" delayMs={150}>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            Cancele a qualquer momento. Segurança de nível empresarial.
+            🔒 Cancele em 1 clique. Sem ligações. Sem emails chatos. Seus dados? Exporte ou delete quando quiser. Segurança de nível bancário.
           </p>
         </Reveal>
       </div>

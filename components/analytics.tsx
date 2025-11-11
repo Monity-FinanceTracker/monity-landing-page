@@ -4,23 +4,23 @@ import { Reveal } from "@/components/reveal"
 const analyticsCards = [
   {
     icon: BarChart3,
-    title: "Descubra Para Onde Seu Dinheiro Realmente Vai",
-    description: "Breakdown visual por categoria. Veja exatamente onde cada centavo vai.",
+    title: "\"Eu Gasto ISSO em Delivery?!\"",
+    description: "Breakdown visual por categoria mostra a verdade sobre seus hábitos. Veja exatamente onde cada centavo vai. Prepare-se para surpresas.",
   },
   {
     icon: PieChart,
     title: "Alertas Antes de Estourar",
-    description: "Saiba 3 dias antes de bater o limite. Alertas inteligentes te salvam de decisões ruins no impulso do momento.",
+    description: "Saiba 3 dias antes de bater o limite. Alertas inteligentes te salvam de decisões ruins no impulso do momento. Tome controle antes que seja tarde.",
   },
   {
     icon: LineChart,
-    title: "Preveja e Planeje",
-    description: "Veja tendências de gastos e saiba exatamente o que vai acontecer financeiramente no próximo mês. Sem surpresas.",
+    title: "Veja o Mês Que Vem Como Se Já Tivesse Acontecido",
+    description: "Tendências de gastos mostram exatamente o que vai acontecer no próximo mês. Ajuste agora, não depois. Zero surpresas desagradáveis.",
   },
   {
     icon: Activity,
-    title: "Score de Saúde Financeira",
-    description: "De 0 a 100, saiba se suas finanças estão no caminho certo. Dicas personalizadas para melhorar seu score mês a mês.",
+    title: "Quanto É Seu Score? A Maioria Começa em 40-50.",
+    description: "De 0 a 100, saiba se suas finanças estão no caminho certo. Dicas personalizadas para melhorar seu score todo mês. Onde você vai chegar?",
   },
 ]
 
@@ -33,11 +33,12 @@ export function Analytics() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
           <Reveal as="h2" className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up">
-            Decisões Financeiras Inteligentes,{" "}
-            <span className="text-primary">Baseadas em Dados Reais</span>
+            Veja Padrões Que Você Nunca Percebeu.{" "}
+            <span className="text-primary">Economize Mais Que Imaginava.</span>
           </Reveal>
           <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
-            Descubra seus padrões reais de gastos. Veja tendências e tome decisões com confiança total.
+            Descubra seus padrões reais de gastos. Veja tendências antes que se tornem problemas.
+            Tome decisões com confiança total baseada em SEUS dados.
           </Reveal>
         </div>
 

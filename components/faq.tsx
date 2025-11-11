@@ -4,19 +4,19 @@ import { Reveal } from "@/components/reveal"
 const faqs = [
   {
     question: "Como funciona a categorização por IA?",
-    answer: "A IA aprende com as suas escolhas. Ao adicionar uma transação, você recebe uma sugestão de categoria baseada no que já fez antes. Ao aprovar ou corrigir, o sistema se adapta ao seu estilo e fica cada vez mais preciso — sem esforço extra."
+    answer: "A IA aprende com as suas escolhas. Exemplo real: 'Uber para o centro' → IA sugere 'Transporte'. Você aprova. Na próxima vez que pegar Uber, já sabe. Aprende em 1 tentativa. Ao aprovar ou corrigir sugestões, o sistema se adapta ao seu estilo e fica cada vez mais preciso — sem esforço extra. É como ter um assistente que te conhece melhor a cada dia."
   },
   {
     question: "Meus dados financeiros estão seguros?",
-    answer: "Sim. Seus dados são protegidos com padrões rigorosos de segurança e criptografia. Eles são seus: não vendemos nem compartilhamos suas informações. Você pode exportar ou excluir tudo quando quiser."
+    answer: "Sim. Mesmo padrão de segurança que bancos usam. Seus dados? São SEUS. Não vendemos. Não compartilhamos. Não usamos para anúncios. Você exporta ou deleta quando quiser. Simples assim. Nós levamos privacidade a sério — seus dados financeiros nunca vão aparecer em nenhum lugar além da sua conta."
   },
   {
     question: "Como funciona a divisão de despesas em grupo?",
-    answer: "Crie um grupo, convide membros por email e comece a adicionar despesas compartilhadas. Escolha como dividir: valores iguais, percentuais ou divisões personalizadas. O Monity rastreia automaticamente quem deve o quê e envia notificações de dívidas em tempo real. Marque despesas como quitadas quando pagas. Perfeito para colegas de quarto, viagens ou qualquer custo compartilhado."
+    answer: "Crie um grupo, convide membros por email ou link compartilhável. Adicione despesas compartilhadas e escolha como dividir: valores iguais, percentuais ou divisões personalizadas. O Monity rastreia automaticamente quem deve o quê e envia notificações em tempo real. Marque despesas como quitadas quando pagas — sistema recalcula tudo instantaneamente. Perfeito para colegas de quarto, viagens em grupo, jantares com amigos ou qualquer custo compartilhado. Zero conversas constrangedoras."
   },
   {
     question: "O que torna o Monity diferente do Mint ou YNAB?",
-    answer: "O Monity reúne tudo em um só lugar: controle completo das suas finanças pessoais e divisão de despesas em grupo em tempo real. A IA aprende com você para reduzir tarefas repetitivas e acelerar seu dia a dia. Simples, bonito e focado em resultados práticos — não em complexidade."
+    answer: "Mint morreu. YNAB é complicado demais e caro (US$ 14.99/mês). Monity? Rápido, inteligente, brasileiro, e com divisão de contas integrada. IA que realmente aprende (não só categoriza). Interface que não parece trabalho. E tem plano grátis generoso de verdade — não uma versão limitada que te frustra até você pagar. Monity é o que esses apps deveriam ter sido."
   },
   {
     question: "Posso usar o Monity no mobile?",
@@ -28,15 +28,15 @@ const faqs = [
   },
   {
     question: "Como funciona o Assistente de IA Financeiro?",
-    answer: "Nosso Assistente de IA oferece conselhos financeiros personalizados baseados nos seus gastos, orçamentos e metas. Faça perguntas sobre suas finanças, receba recomendações sobre como economizar mais e entenda seus padrões de gastos. Usuários gratuitos têm 3 mensagens por dia, enquanto membros Premium têm acesso ilimitado."
+    answer: "É como ter um consultor financeiro pessoal no bolso. Pergunte 'Por que gastei tanto mês passado?' ou 'Posso comprar isso?' e receba respostas baseadas nos SEUS dados reais — não conselhos genéricos da internet. A IA analisa seus hábitos, orçamentos e metas para dar recomendações personalizadas. Usuários gratuitos têm 3 mensagens por dia (suficiente para a maioria). Premium? Pergunte o quanto quiser."
   },
   {
     question: "O que é o Calculador de Investimentos?",
-    answer: "Calcule quanto seu dinheiro pode crescer ao longo do tempo com diferentes cenários de investimento. Veja projeções de juros compostos, saiba quanto investir mensalmente para atingir metas e compare diferentes estratégias. Usuários gratuitos têm 2 simulações por mês, e Premium oferece simulações ilimitadas."
+    answer: "Quer saber quanto você terá em 5 anos se investir R$ 500 por mês? Calculador mostra exatamente. Ajuste taxa de juros, período, aportes mensais e veja o gráfico crescer. Juros compostos são mágica — mas só se você VISUALIZAR o impacto. Plano gratuito: 2 simulações/mês (teste suas ideias). Premium: quantas quiser (compare todas as estratégias possíveis)."
   },
   {
     question: "Posso exportar meus dados?",
-    answer: "Sim. Você pode levar seus dados com você a qualquer momento, exportando históricos, orçamentos e relatórios de forma simples. Seus dados são sempre seus."
+    answer: "Sim. A qualquer momento. CSV, Excel, PDF — escolha o formato. Históricos completos, orçamentos, relatórios de categoria, tudo. Seus dados são 100% SEUS. Quer sair? Leve tudo com você. Quer backup? Exporte todo mês. Sem burocracia, sem ligações pedindo para ficar. Um clique e pronto."
   },
   {
     question: "Como funciona o teste gratuito?",

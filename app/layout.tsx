@@ -12,13 +12,13 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Monity - AI-Powered Personal Finance Tracker",
+  title: "Monity - Rastreador de Finanças Pessoais com IA",
   icons: {
     icon: "/monity-logo.png",
     apple: "/monity-logo.png",
   },
   description:
-    "Make budgeting delightfully fast, powerfully intelligent, and totally transparent with AI-powered expense tracking and group collaboration.",
+    "Controle total das suas finanças com IA que aprende seus hábitos. Rastreie gastos, divida contas em grupo e economize mais. Comece grátis hoje.",
   generator: "v0.app",
 }
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${dmSans.variable} font-sans antialiased`}>
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />

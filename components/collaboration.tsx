@@ -4,24 +4,24 @@ import { Reveal } from "@/components/reveal"
 const collaborationFeatures = [
   {
     icon: Users,
-    title: "Comece em 30 Segundos",
+    title: "30 Segundos e Pronto. Email. Link. Done.",
     description:
-      "Crie sua conta grátis e convide amigos. Sem complicação, sem planilhas.",
+      "Crie sua conta grátis e convide amigos por email ou link. Sem complicação, sem planilhas, sem precisar baixar nada.",
   },
   {
     icon: UserPlus,
-    title: "Adicione Despesas em Segundos",
-    description: "Crie a despesa, escolha quem pagou e como dividir. A IA sugere automaticamente.",
+    title: "Foto da Conta. IA Preenche Tudo. Você Só Aprova.",
+    description: "Crie a despesa, escolha quem pagou e como dividir. A IA sugere a divisão automaticamente. Rápido e sem erro.",
   },
   {
     icon: Receipt,
-    title: "Todos Veem Tudo em Tempo Real",
-    description: "Todos do grupo veem quem deve o quê, instantaneamente. Dashboard transparente e histórico completo.",
+    title: "Todo Mundo Recebe Notificação. Zero Cobranças Constrangedoras.",
+    description: "Todos do grupo veem quem deve o quê, instantaneamente. Dashboard transparente, histórico completo e notificações automáticas.",
   },
   {
     icon: DollarSign,
-    title: "Marque Como Pago e Siga Sua Vida",
-    description: "Um clique e pronto. O sistema recalcula tudo automaticamente.",
+    title: "Pagou? Um Toque. Sistema Atualiza. Todos Sabem.",
+    description: "Marque como pago em um clique. O sistema recalcula tudo automaticamente e notifica o grupo. Sem esforço.",
   },
 ]
 
@@ -53,12 +53,15 @@ export function Collaboration() {
             </Reveal>
 
             <Reveal as="h2" className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up" delayMs={50}>
-              Divida Contas Sem Brigas.{" "}
-              <span className="text-primary">Sem Planilhas. Sem Drama.</span>
+              Nunca Mais Cobre Dinheiro de Amigo.{" "}
+              <span className="text-primary">O Monity Cuida Disso.</span>
             </Reveal>
-            <Reveal as="p" className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={100}>
-              Crie grupos, adicione contas e deixe o Monity calcular quem deve o quê. 
+            <Reveal as="p" className="mb-6 text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={100}>
+              Crie grupos, adicione contas e deixe o Monity calcular quem deve o quê.
               Divisões automáticas e transparentes. Chega de planilhas e conversas constrangedoras.
+            </Reveal>
+            <Reveal as="p" className="mb-10 text-sm text-muted-foreground/80 italic" direction="up" delayMs={120}>
+              ✓ Apartamento compartilhado • Viagens em grupo • Jantar com amigos • Presente coletivo • Qualquer gasto compartilhado
             </Reveal>
 
             <div className="space-y-5">

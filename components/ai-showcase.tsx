@@ -6,25 +6,25 @@ const aiFeatures = [
     icon: CheckCircle2,
     title: "Categorização Verdadeiramente Inteligente",
     description: "IA que aprende seus padrões e categoriza automaticamente com 90%+ de precisão. Quanto mais usa, mais inteligente fica.",
-    metric: "Economize 10+ horas por mês"
+    metric: "10+ horas de volta para sua vida todo mês"
   },
   {
     icon: MessageSquare,
     title: "Assistente IA que Responde 24/7",
-    description: "Respostas instantâneas sobre suas finanças. Pergunte qualquer coisa e receba conselhos baseados nos seus dados reais.",
-    metric: "3 mensagens grátis/dia, ilimitado no Premium"
+    description: "Respostas em segundos, não em dias. Pergunte sobre qualquer transação, tendência ou decisão. É como ter um CFO no bolso.",
+    metric: "3 mensagens grátis/dia, ilimitadas no Premium"
   },
   {
     icon: AlertCircle,
     title: "Deliciosamente Rápido de Usar",
-    description: "Adicione transações em menos de 10 segundos. Interface moderna, sincronização em tempo real.",
+    description: "Netflix leva 8 segundos para escolher o que assistir. Monity leva <10 para adicionar uma transação. Mais rápido que qualquer app que você usa.",
     metric: "Meta <10 segundos por transação"
   },
   {
     icon: Target,
     title: "Inteligência Alimentada por IA",
-    description: "Análise profunda de padrões de gastos. Recomendações personalizadas, detecção de anomalias e projeções inteligentes.",
-    metric: "90%+ de precisão"
+    description: "Análise profunda de padrões de gastos. Recomendações personalizadas, detecção de anomalias e projeções inteligentes baseadas nos SEUS dados.",
+    metric: "90%+ de precisão nas previsões"
   },
 ]
 
@@ -47,12 +47,12 @@ export function AIShowcase() {
             </Reveal>
 
             <Reveal as="h2" className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up" delayMs={50}>
-              Chega de Planilhas. Chega de Estresse.{" "}
-              <span className="text-primary">Só Clareza.</span>
+              Pare de Adivinhar.{" "}
+              <span className="text-primary">Comece a Saber.</span>
             </Reveal>
             <Reveal as="p" className="mb-10 text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={100}>
-              Descubra onde cada centavo vai. Decisões baseadas em dados reais, não suposições. 
-              IA que aprende com você.
+              Descubra onde cada centavo vai. Decisões baseadas em dados reais, não achismos.
+              IA que aprende com você e fica mais inteligente a cada uso.
             </Reveal>
 
             <div className="space-y-5">

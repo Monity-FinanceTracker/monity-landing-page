@@ -23,16 +23,16 @@ export function Hero() {
 
           {/* Improved headline with better hierarchy */}
           <Reveal as="h1" className="mb-6 text-balance text-5xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-6xl lg:text-7xl" direction="up" delayMs={50}>
-            Pare de Se Preocupar com Dinheiro.{" "}
+            Chega de Surpresas no Fim do Mês.{" "}
             <span className="bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] bg-clip-text text-transparent drop-shadow-sm">
-              Comece a Viver.
+              Viva com Clareza.
             </span>
           </Reveal>
 
           {/* Enhanced subheadline */}
           <Reveal as="p" className="mb-12 text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl max-w-3xl mx-auto" direction="up" delayMs={100}>
-            Controle total das suas finanças com IA que aprende seus hábitos. 
-            Saiba exatamente para onde seu dinheiro vai e planeje seu futuro.
+            IA que aprende com você + divisão de contas automática + clareza total.
+            Tudo em menos de 10 segundos por dia.
           </Reveal>
 
           {/* CTA buttons with improved styling */}
@@ -44,7 +44,7 @@ export function Hero() {
             >
               <a href="https://app.monity-finance.com/signup">
                 <span className="relative z-10 flex items-center">
-                  Começar Grátis →
+                  Começar Grátis - 2 Min Para Clareza Total
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </a>
@@ -55,9 +55,13 @@ export function Hero() {
           <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm">
             <Reveal as="div" className="flex items-center gap-2 text-muted-foreground" direction="up" delayMs={250}>
               <Check className="h-4 w-4 text-primary" strokeWidth={3} />
-              <span>Plano gratuito disponível</span>
+              <span>100% Grátis Para Começar</span>
             </Reveal>
             <Reveal as="div" className="flex items-center gap-2 text-muted-foreground" direction="up" delayMs={300}>
+              <Check className="h-4 w-4 text-primary" strokeWidth={3} />
+              <span>Sem Cartão Necessário</span>
+            </Reveal>
+            <Reveal as="div" className="flex items-center gap-2 text-muted-foreground" direction="up" delayMs={350}>
               <Check className="h-4 w-4 text-primary" strokeWidth={3} />
               <span>Premium a partir de R$ 9,90/mês</span>
             </Reveal>

@@ -4,82 +4,82 @@ import { Reveal } from "@/components/reveal"
 const features = [
   {
     icon: Brain,
-    title: "IA que Aprende Seus Hábitos",
+    title: "Economize 10 Horas Por Mês. Automaticamente.",
     description:
-      "Categorização automática que aprende com você. Economize horas enquanto a IA fica mais inteligente a cada uso.",
+      "Chega de perder seu sábado classificando gastos. A IA categoriza tudo em <10 segundos. Quanto mais você usa, menos trabalho tem.",
     keyPoints: [
-      "Auto-categorização inteligente",
-      "Economize horas - entrada em <10 segundos"
+      "10+ horas de volta para sua vida todo mês",
+      "90%+ de precisão na categorização"
     ]
   },
   {
     icon: Users,
-    title: "Divida Contas Sem Brigas",
+    title: "Zero Conversas Constrangedoras Sobre Dinheiro.",
     description:
-      "Crie grupos, adicione despesas e deixe o Monity calcular automaticamente. Divisões justas, sem drama.",
+      "Jantar com amigos. Aluguel do Airbnb. Conta de luz. Todo mundo vê quem deve o quê em tempo real. Sem planilhas. Sem drama. Só transparência.",
     keyPoints: [
-      "Grupos ilimitados",
-      "Divisões automáticas em tempo real"
+      "Grupos ilimitados e divisões automáticas",
+      "Notificações em tempo real para todos"
     ]
   },
   {
     icon: Target,
-    title: "Orçamentos que Realmente Funcionam",
+    title: "Nunca Mais Estoure Seu Orçamento Sem Saber.",
     description:
-      "Defina limites e receba alertas antes de estourar. Metas claras, progresso visível.",
+      "Alertas inteligentes 3 dias antes do limite. Tome decisões conscientes antes que seja tarde demais.",
     keyPoints: [
-      "Alertas inteligentes",
+      "Alertas preventivos inteligentes",
       "2 orçamentos grátis, ilimitados no Premium"
     ]
   },
   {
     icon: Calendar,
-    title: "Veja Seu Futuro Financeiro Agora",
+    title: "Saiba Seu Saldo de Amanhã. Hoje.",
     description:
-      "Saldo projetado dia a dia. Agende transações recorrentes e nunca mais perca um pagamento.",
+      "Calendário com saldo projetado dia a dia. Agende contas recorrentes e nunca mais seja pego de surpresa. Sempre saiba o que vem por aí.",
     keyPoints: [
-      "Visualize seu saldo futuro",
-      "Exclusivo Premium"
+      "Visualize seu saldo futuro diariamente",
+      "Recurso exclusivo Premium"
     ]
   },
   {
     icon: BarChart3,
-    title: "Descubra Para Onde Seu Dinheiro Realmente Vai",
+    title: "A Verdade Sobre Seus Gastos (Pode Ser Chocante).",
     description:
-      "Descubra seus padrões reais de gastos e receba dicas personalizadas para economizar mais.",
+      "IA analisa seus padrões reais e mostra onde você está sangrando dinheiro. Recomendações personalizadas para economizar mais, sem sofrimento.",
     keyPoints: [
-      "Análise profunda com IA",
-      "Score de saúde financeira"
+      "Análise profunda com insights de IA",
+      "Score de saúde financeira de 0 a 100"
     ]
   },
   {
     icon: MessageSquare,
-    title: "Seu Consultor Financeiro Pessoal com IA",
+    title: "Pergunte Qualquer Coisa. Respostas em 3 Segundos.",
     description:
-      "Assistente disponível 24/7. Respostas instantâneas e conselhos personalizados sobre suas finanças.",
+      "Consultoria financeira personalizada 24/7 baseada nos SEUS dados reais. Não é conselho genérico. É sobre você.",
     keyPoints: [
-      "Respostas instantâneas",
-      "3 mensagens/dia grátis, ilimitado no Premium"
+      "Respostas instantâneas e personalizadas",
+      "3 mensagens/dia grátis, ilimitadas no Premium"
     ]
   },
   {
     icon: TrendingUp,
-    title: "Veja Seu Dinheiro Crescer com o Tempo",
+    title: "Quanto Você Terá em 5 Anos? Descubra Agora.",
     description:
-      "Calcule quanto seu dinheiro pode crescer com juros compostos. Planeje seu futuro com clareza.",
+      "Simulador de juros compostos mostra exatamente quanto seu dinheiro pode crescer. Planeje seu futuro com números reais, não esperanças.",
     keyPoints: [
-      "Simulações com juros compostos",
+      "Simulações detalhadas de investimento",
       "2 simulações/mês grátis, ilimitadas no Premium"
     ]
   },
   {
     icon: Zap,
-    title: "Controle Financeiro que Você Vai Adorar",
+    title: "Mais Rápido Que Instagram. Mais Útil Que Qualquer Planilha.",
     description:
-      "Interface rápida e intuitiva. Visual limpo, modo escuro e totalmente responsivo.",
+      "Interface deliciosamente rápida. Modo escuro. Design que não parece trabalho. Finalmente, um app financeiro que você VAI QUERER abrir.",
     keyPoints: [
-      "Mobile-first",
-      "Rápido e acessível"
+      "Design mobile-first e responsivo",
+      "Mais rápido que qualquer app que você usa"
     ]
   },
 ]
