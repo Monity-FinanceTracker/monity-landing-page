@@ -12,13 +12,13 @@ export default function TermsPage() {
     <main className="bg-background text-foreground">
       <section className="container mx-auto max-w-4xl px-4 py-28 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <div className="mx-auto mb-4 w-fit overflow-hidden rounded-2xl border border-border/40 bg-muted/30 p-2 shadow-sm">
+          <div className="mx-auto w-fit overflow-hidden p-2">
             <Image
               src="/monity-legal-header.png"
               alt="Monity"
               width={1200}
               height={400}
-              className="h-16 w-auto object-contain sm:h-20"
+              className="mt-[-2em] h-20 w-auto object-contain sm:h-28"
               priority
             />
           </div>

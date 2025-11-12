@@ -6,12 +6,15 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <img 
-              src="/monity-logo.png" 
-              alt="Monity Logo" 
-              className="h-8 w-8 object-contain"
+            <img
+              src="/monity-logo.png"
+              alt="Monity Logo"
+              className="h-10 w-10 object-contain"
             />
-            <span className="text-xl font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+            <span
+              className="text-3xl text-foreground"
+              style={{ fontFamily: '"Times New Roman", Times, serif' }}
+            >
               Monity
             </span>
           </div>
