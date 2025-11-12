@@ -20,9 +20,6 @@ export const metadata: Metadata = {
   description:
     "Controle total das suas finanças com IA que aprende seus hábitos. Rastreie gastos, divida contas em grupo e economize mais. Comece grátis hoje.",
   generator: "v0.app",
-  verification: {
-    google: "wvkQ65r7sHdnMxDIfL-yR2kV5b-HYo9K9X4ttWB7A_U",
-  },
 }
 
 export default function RootLayout({
