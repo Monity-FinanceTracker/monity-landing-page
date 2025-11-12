@@ -13,7 +13,7 @@ export function Header() {
             />
             <span
               className="text-3xl text-foreground"
-              style={{ fontFamily: '"Times New Roman", Times, serif' }}
+              style={{ fontFamily: '"Crimson Roman", "Times New Roman", Times, serif' }}
             >
               Monity
             </span>
