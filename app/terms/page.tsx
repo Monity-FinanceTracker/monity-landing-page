@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export const metadata = {
@@ -11,9 +12,16 @@ export default function TermsPage() {
     <main className="bg-background text-foreground">
       <section className="container mx-auto max-w-4xl px-4 py-28 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <span className="inline-flex items-center rounded-full border border-border/60 bg-muted/40 px-4 py-1 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-            Monity
-          </span>
+          <div className="mx-auto mb-4 w-fit overflow-hidden rounded-2xl border border-border/40 bg-muted/30 p-2 shadow-sm">
+            <Image
+              src="/monity-legal-header.png"
+              alt="Monity"
+              width={1200}
+              height={400}
+              className="h-16 w-auto object-contain sm:h-20"
+              priority
+            />
+          </div>
           <h1 className="mt-6 text-3xl font-semibold sm:text-4xl lg:text-5xl">
             Termos de Serviço
           </h1>
