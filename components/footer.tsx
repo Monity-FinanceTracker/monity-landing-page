@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Twitter, Instagram } from "lucide-react"
 
 export function Footer() {
@@ -103,14 +104,14 @@ export function Footer() {
             <h3 className="mb-4 font-semibold text-foreground">Legal</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/privacy" className="text-muted-foreground transition-colors hover:text-primary">
                   Política de Privacidade
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/terms" className="text-muted-foreground transition-colors hover:text-primary">
                   Termos de Serviço
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground transition-colors hover:text-primary">

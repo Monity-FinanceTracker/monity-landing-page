@@ -1,6 +1,6 @@
 "use client"
 
-import { HTMLAttributes, ReactNode } from "react"
+import type { HTMLAttributes, JSX, ReactNode } from "react"
 import { useInView } from "@/hooks/use-in-view"
 
 type Direction = "up" | "down" | "left" | "right" | "zoom"
