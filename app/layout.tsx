@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { DM_Sans } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
+import Script from "next/script"
 import "./globals.css"
 
 const dmSans = DM_Sans({
@@ -29,7 +30,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        {/* Google Tag Manager */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3QDNTD3');`}
+        </Script>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WSRW5FN82K"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WSRW5FN82K');
+          `}
+        </Script>
+      </head>
       <body className={`${dmSans.variable} font-sans antialiased`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3QDNTD3"
+height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe></noscript>
+        {/* End Google Tag Manager (noscript) */}
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
       </body>
