@@ -16,10 +16,7 @@ export function Footer() {
                 alt="Monity Logo"
                 className="h-10 w-10 object-contain"
               />
-              <span
-                className="text-3xl text-foreground"
-                style={{ fontFamily: '"Crimson Roman", "Times New Roman", Times, serif' }}
-              >
+              <span className="text-3xl font-normal text-foreground font-stratford">
                 Monity
               </span>
             </div>
@@ -38,6 +35,8 @@ export function Footer() {
                 href="https://www.instagram.com/monity.app"
                 className="text-muted-foreground transition-all hover:text-primary hover:scale-110"
                 aria-label="Instagram"
+                target="_blank"
+                rel="noreferrer"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -124,7 +123,12 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <a
+                  href="https://www.instagram.com/monity.app"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Contato
                 </a>
               </li>

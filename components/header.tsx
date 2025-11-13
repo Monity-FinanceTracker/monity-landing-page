@@ -11,10 +11,7 @@ export function Header() {
               alt="Monity Logo"
               className="h-10 w-10 object-contain"
             />
-            <span
-              className="text-3xl text-foreground"
-              style={{ fontFamily: '"Crimson Roman", "Times New Roman", Times, serif' }}
-            >
+            <span className="text-3xl font-normal text-foreground font-stratford">
               Monity
             </span>
           </div>

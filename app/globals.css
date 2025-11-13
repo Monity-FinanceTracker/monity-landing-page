@@ -3,6 +3,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Stratford Std Roman";
+  src: url("/stratford.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: oklch(0.962 0.012 78.5);
   --foreground: oklch(0.195 0 0);
@@ -125,6 +133,9 @@
 
 /* Reveal animations */
 @layer utilities {
+  .font-stratford {
+    font-family: "Stratford Std Roman", "Times New Roman", Times, serif;
+  }
   .reveal {
     opacity: 0;
     transform: translateY(24px) scale(0.98);
