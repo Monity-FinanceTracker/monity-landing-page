@@ -25,8 +25,8 @@ export function Footer() {
             </p>
             <p className="text-sm text-muted-foreground mb-6">
               📧{" "}
-              <a href="mailto:support@monity-finance.com" className="text-primary hover:underline font-medium">
-                support@monity-finance.com
+              <a href="mailto:leo.stuart@monity-finance.com" className="text-primary hover:underline font-medium">
+                leo.stuart@monity-finance.com
               </a>
             </p>
             <div className="flex items-center gap-4">
