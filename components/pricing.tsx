@@ -57,11 +57,15 @@ export function Pricing() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
           <Reveal as="h2" className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl" direction="up">
-            Grátis Para Sempre. <span className="text-primary">Premium Quando Quiser Mais Poder.</span>
+            Comece Grátis.{" "}
+            <span className="bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] bg-clip-text text-transparent">
+              Upgrade Quando Quiser Mais.
+            </span>
           </Reveal>
           <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
             Experimente todos os recursos principais grátis. Sem cartão. Sem tempo limite.
-            Desbloqueie poder ilimitado com Premium quando estiver pronto.
+            <br />
+            <span className="font-semibold text-foreground">Premium por menos de 2 cafés por mês</span> — economize 100x mais que isso.
           </Reveal>
         </div>
 

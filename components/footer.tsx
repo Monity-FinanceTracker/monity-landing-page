@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Twitter, Instagram } from "lucide-react"
+import { Twitter, Instagram, Users, Star } from "lucide-react"
 
 export function Footer() {
   return (
@@ -20,8 +20,14 @@ export function Footer() {
                 Monity
               </span>
             </div>
-            <p className="text-sm leading-relaxed text-muted-foreground mb-6">
+            <p className="text-sm leading-relaxed text-muted-foreground mb-4">
               Finanças pessoais com IA. Rastreie despesas, divida contas e domine seu dinheiro.
+            </p>
+            <p className="text-sm text-muted-foreground mb-6">
+              📧{" "}
+              <a href="mailto:support@monity-finance.com" className="text-primary hover:underline font-medium">
+                support@monity-finance.com
+              </a>
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -136,11 +142,23 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-border/30 pt-8 text-center">
-          <p className="text-sm text-muted-foreground">
-            © 2025 Monity. Orçamento rápido feito inteligente.
-
-          </p>
+        <div className="mt-12 border-t border-border/30 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-muted-foreground">
+              © 2025 Monity. Finanças pessoais feitas com IA.
+            </p>
+            <div className="flex items-center gap-6 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <Star className="h-4 w-4 fill-primary text-primary" />
+                <span className="font-semibold">4.9/5 de avaliação</span>
+              </div>
+              <div className="hidden sm:block h-4 w-px bg-border/50" />
+              <div className="flex items-center gap-2">
+                <Users className="h-4 w-4 text-primary" />
+                <span className="font-semibold">5,000+ usuários ativos</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

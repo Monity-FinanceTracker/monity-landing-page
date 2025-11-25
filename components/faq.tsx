@@ -56,8 +56,11 @@ export function FAQ() {
             Perguntas <span className="text-primary">Frequentes</span>
           </Reveal>
           <Reveal as="p" className="text-balance text-lg leading-relaxed text-muted-foreground" direction="up" delayMs={75}>
-            Tudo que você precisa saber sobre o Monity. Não encontrou o que procura? 
-            <a href="#" className="text-primary hover:underline">Entre em contato com nossa equipe de suporte</a>.
+            Tudo que você precisa saber sobre o Monity. Tem mais perguntas?
+            <br />
+            <a href="mailto:leo.stuart@monity-finance.com" className="text-primary hover:underline font-semibold">
+              leo.stuart@monity-finance.com
+            </a>
           </Reveal>
         </div>
 

@@ -87,15 +87,31 @@ export function AIShowcase() {
             </div>
           </div>
 
-          <Reveal className="relative group lg:order-last order-first" direction="left" delayMs={150}>
-            {/* Enhanced glow effect */}
-            <div className="absolute -inset-4 bg-gradient-to-br from-primary/30 via-[#55B8B2]/20 to-[#3A8A85]/15 blur-3xl opacity-60 group-hover:opacity-80 transition-opacity" />
-            <div className="relative rounded-2xl border border-primary/30 bg-gradient-to-br from-card/90 via-card/70 to-card/90 p-2 shadow-2xl shadow-primary/20 backdrop-blur-sm hover:border-primary/40 transition-all ring-1 ring-primary/20 hover:ring-primary/30">
-              <img
-                src="/Screenshot 2025-10-24 at 00.56.29.png"
-                alt="Calendário de Fluxo de Caixa - Visualize seu saldo ao longo do tempo"
-                className="h-auto w-full rounded-lg"
-              />
+          <Reveal className="lg:order-last order-first" direction="left" delayMs={150}>
+            {/* Clean media container - works with image or video */}
+            <div className="relative rounded-2xl border border-primary/30 bg-card shadow-2xl shadow-primary/30 overflow-hidden">
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/15 via-[#55B8B2]/10 to-[#3A8A85]/15 blur-2xl -z-10" />
+              
+              {/* Media wrapper */}
+              <div className="relative bg-background p-4">
+                {/* Replace img with video element when you have video */}
+                <img
+                  src="/Screenshot 2025-10-24 at 00.56.29.png"
+                  alt="Calendário de Fluxo de Caixa"
+                  className="w-full rounded-lg"
+                />
+                {/* For video:
+                <video 
+                  className="w-full rounded-lg" 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                >
+                  <source src="/calendar-demo.mp4" type="video/mp4" />
+                </video>
+                */}
+              </div>
             </div>
           </Reveal>
         </div>

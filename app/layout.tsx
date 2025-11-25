@@ -13,13 +13,20 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Monity - Rastreador de Finanças Pessoais com IA",
+  title: "Monity - Finanças Pessoais com IA | 20x Mais Rápido Que Planilhas",
   icons: {
     icon: "/monity-logo.png",
     apple: "/monity-logo.png",
   },
   description:
-    "Controle total das suas finanças com IA que aprende seus hábitos. Rastreie gastos, divida contas em grupo e economize mais. Comece grátis hoje.",
+    "Domine suas finanças em menos de 10 segundos por dia. IA que aprende seus padrões, divisão de contas sem drama, e clareza financeira total. Usado por 5,000+ brasileiros. Comece grátis.",
+  keywords: "finanças pessoais, controle financeiro, IA, divisão de contas, orçamento, app financeiro brasil",
+  openGraph: {
+    title: 'Monity - Pare de Adivinhar Onde Seu Dinheiro Foi',
+    description: 'Usado por 5,000+ brasileiros. 20x mais rápido que planilhas. IA que aprende seus padrões financeiros. Avaliação 4.9/5.',
+    type: 'website',
+    locale: 'pt_BR',
+  },
   generator: "v0.app",
 }
 

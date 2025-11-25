@@ -33,15 +33,31 @@ export function Collaboration() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
-          <Reveal className="order-2 lg:order-1 relative group" direction="right" delayMs={150}>
-            {/* Enhanced glow effect */}
-            <div className="absolute -inset-4 bg-gradient-to-br from-primary/25 via-[#55B8B2]/15 to-[#3A8A85]/10 blur-3xl opacity-60 group-hover:opacity-80 transition-opacity" />
-            <div className="relative rounded-2xl border border-primary/30 bg-gradient-to-br from-card/90 via-card/70 to-card/90 p-2 shadow-2xl shadow-primary/20 backdrop-blur-sm hover:border-primary/40 transition-all ring-1 ring-primary/20 hover:ring-primary/30">
-              <img
-                src="/Screenshot 2025-10-19 at 23.31.34.png"
-                alt="Interface de divisão de despesas em grupo com múltiplos usuários"
-                className="h-auto w-full rounded-lg"
-              />
+          <Reveal className="order-2 lg:order-1" direction="right" delayMs={150}>
+            {/* Clean media container - works with image or video */}
+            <div className="relative rounded-2xl border border-primary/30 bg-card shadow-2xl shadow-primary/30 overflow-hidden">
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/15 via-[#55B8B2]/10 to-[#3A8A85]/15 blur-2xl -z-10" />
+              
+              {/* Media wrapper */}
+              <div className="relative bg-background p-4">
+                {/* Replace img with video element when you have video */}
+                <img
+                  src="/Screenshot 2025-10-19 at 23.31.34.png"
+                  alt="Interface de divisão de despesas em grupo"
+                  className="w-full rounded-lg"
+                />
+                {/* For video:
+                <video 
+                  className="w-full rounded-lg" 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                >
+                  <source src="/group-split-demo.mp4" type="video/mp4" />
+                </video>
+                */}
+              </div>
             </div>
           </Reveal>
 
