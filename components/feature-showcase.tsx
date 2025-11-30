@@ -3,28 +3,28 @@ import { Sparkles, Zap, Brain, TrendingUp } from "lucide-react"
 
 const features = [
   {
-    media: "/Screenshot 2025-10-19 at 23.31.17.png",
+    media: "/novos/IA.png",
     type: "image", // or "video"
     icon: Brain,
     title: "IA que Aprende com Você",
     description: "Categorização automática que melhora a cada uso"
   },
   {
-    media: "/Screenshot 2025-10-19 at 23.31.34.png",
+    media: "/novos/Grupos.png",
     type: "image",
     icon: Zap,
     title: "Divisão Instantânea",
     description: "Grupos ilimitados, cálculos automáticos"
   },
   {
-    media: "/Screenshot 2025-10-19 at 23.32.55.png",
+    media: "/novos/Calculadora.png",
     type: "image",
     icon: TrendingUp,
     title: "Insights Profundos",
     description: "Veja padrões que você nunca percebeu"
   },
   {
-    media: "/Screenshot 2025-10-24 at 00.56.29.png",
+    media: "/novos/Calendario.png",
     type: "image",
     icon: Sparkles,
     title: "Calendário Inteligente",

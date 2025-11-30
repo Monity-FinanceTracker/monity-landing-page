@@ -40,9 +40,9 @@ export function Collaboration() {
               
               {/* Media wrapper */}
               <div className="relative bg-background p-4">
-                {/* Replace img with video element when you have video */}
+                {/* Updated with new image */}
                 <img
-                  src="/Screenshot 2025-10-19 at 23.31.34.png"
+                  src="/novos/Grupos.png"
                   alt="Interface de divisão de despesas em grupo"
                   className="w-full rounded-lg"
                 />
@@ -54,7 +54,7 @@ export function Collaboration() {
                   loop 
                   playsInline
                 >
-                  <source src="/group-split-demo.mp4" type="video/mp4" />
+                  <source src="/novos/Screen Recording 2025-11-28 at 15.43.51.mov" type="video/mp4" />
                 </video>
                 */}
               </div>

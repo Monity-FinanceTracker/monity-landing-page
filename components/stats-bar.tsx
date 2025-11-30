@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/reveal"
-import { Users, Star, TrendingUp, Zap } from "lucide-react"
+import { Users, Star, TrendingUp, Zap, Briefcase, Code, GraduationCap, Rocket } from "lucide-react"
 
 const stats = [
   {
@@ -24,11 +24,30 @@ const stats = [
   }
 ]
 
+const userTypes = [
+  {
+    icon: Rocket,
+    label: "Startups"
+  },
+  {
+    icon: Briefcase,
+    label: "Freelancers"
+  },
+  {
+    icon: Code,
+    label: "Desenvolvedores"
+  },
+  {
+    icon: GraduationCap,
+    label: "Estudantes"
+  }
+]
+
 export function StatsBar() {
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-r from-primary/5 via-[#55B8B2]/5 to-[#3A8A85]/5 border-y border-primary/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 max-w-5xl mx-auto mb-12">
           {stats.map((stat, index) => (
             <Reveal
               key={stat.label}
@@ -50,6 +69,28 @@ export function StatsBar() {
             </Reveal>
           ))}
         </div>
+
+        {/* User types section */}
+        <Reveal className="border-t border-primary/10 pt-8" direction="up" delayMs={300}>
+          <p className="text-center text-sm text-muted-foreground mb-6 font-medium">
+            Usado por profissionais de:
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12 max-w-4xl mx-auto">
+            {userTypes.map((type, index) => (
+              <Reveal
+                key={type.label}
+                className="flex items-center gap-2 text-muted-foreground/80 hover:text-foreground transition-colors"
+                delayMs={350 + index * 50}
+                direction="up"
+              >
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-muted/50">
+                  <type.icon className="h-4 w-4" />
+                </div>
+                <span className="text-sm font-medium">{type.label}</span>
+              </Reveal>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   )

@@ -24,10 +24,10 @@ export function Hero() {
 
           {/* Improved headline with better hierarchy */}
           <Reveal as="h1" className="mb-6 text-balance text-5xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-6xl lg:text-7xl" direction="up" delayMs={50}>
-            Pare de Adivinhar Onde Seu Dinheiro Foi.{" "}
             <span className="bg-gradient-to-r from-primary via-[#55B8B2] to-[#3A8A85] bg-clip-text text-transparent drop-shadow-sm">
-              Comece a Saber.
-            </span>
+              Clareza Financeira
+            </span>{" "}
+            em 10 Segundos.
           </Reveal>
 
           {/* Enhanced subheadline */}
@@ -49,6 +49,19 @@ export function Hero() {
                 <span className="relative z-10 flex items-center">
                   Começar Grátis Agora
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </span>
+              </a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="group border-2 border-primary/30 text-foreground text-lg px-8 py-6 h-auto hover:bg-primary/5 hover:border-primary/50 transition-all hover:-translate-y-1"
+            >
+              <a href="#features">
+                <span className="flex items-center">
+                  <Sparkles className="mr-2 h-5 w-5 text-primary" />
+                  Ver Como Funciona
                 </span>
               </a>
             </Button>
@@ -96,23 +109,24 @@ export function Hero() {
             
             {/* Media container - flexible for image or video */}
             <div className="relative bg-background aspect-video">
-              {/* Replace img with video element when you have video */}
-              <img
-                src="/WhatsApp Image 2025-10-24 at 00.48.45.jpeg"
-                alt="Dashboard Monity"
-                className="w-full h-full object-cover object-top"
-              />
-              {/* For video, use:
+              {/* Product demo video with fallback to image */}
               <video 
-                className="w-full h-full object-cover" 
+                className="w-full h-full object-cover object-top" 
                 autoPlay 
                 muted 
                 loop 
                 playsInline
+                controls
+                poster="/novos/IA.png"
               >
-                <source src="/your-video.mp4" type="video/mp4" />
+                <source src="/novos/Screen Recording 2025-11-28 at 15.51.52.mov" type="video/mp4" />
+                {/* Fallback image if video doesn't load */}
+                <img
+                  src="/novos/IA.png"
+                  alt="Dashboard Monity"
+                  className="w-full h-full object-cover object-top"
+                />
               </video>
-              */}
             </div>
           </div>
         </Reveal>

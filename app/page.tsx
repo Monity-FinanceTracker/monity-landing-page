@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { StatsBar } from "@/components/stats-bar"
+import { OldVsNew } from "@/components/old-vs-new"
 import { HowItWorks } from "@/components/how-it-works"
 import { FeatureShowcase } from "@/components/feature-showcase"
 import { Features } from "@/components/features"
+import { LiveDemo } from "@/components/live-demo"
 import { AIShowcase } from "@/components/ai-showcase"
 import { Collaboration } from "@/components/collaboration"
 import { Analytics } from "@/components/analytics"
@@ -33,9 +35,11 @@ export default function Home() {
       <Header />
       <Hero />
       <StatsBar />
+      <OldVsNew />
       <HowItWorks />
       <FeatureShowcase />
       <Features />
+      <LiveDemo />
       <AIShowcase />
       <Collaboration />
       <Analytics />

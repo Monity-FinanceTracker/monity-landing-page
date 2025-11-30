@@ -94,9 +94,9 @@ export function AIShowcase() {
               
               {/* Media wrapper */}
               <div className="relative bg-background p-4">
-                {/* Replace img with video element when you have video */}
+                {/* Updated with new image */}
                 <img
-                  src="/Screenshot 2025-10-24 at 00.56.29.png"
+                  src="/novos/Calendario.png"
                   alt="Calendário de Fluxo de Caixa"
                   className="w-full rounded-lg"
                 />
@@ -108,7 +108,7 @@ export function AIShowcase() {
                   loop 
                   playsInline
                 >
-                  <source src="/calendar-demo.mp4" type="video/mp4" />
+                  <source src="/novos/Screen Recording 2025-11-28 at 15.43.51.mov" type="video/mp4" />
                 </video>
                 */}
               </div>
