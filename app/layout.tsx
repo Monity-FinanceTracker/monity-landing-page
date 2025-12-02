@@ -26,6 +26,22 @@ export const metadata: Metadata = {
     description: 'Usado por 5,000+ brasileiros. 20x mais rápido que planilhas. IA que aprende seus padrões financeiros. Avaliação 4.9/5.',
     type: 'website',
     locale: 'pt_BR',
+    url: 'https://monity-finance.com',
+    siteName: 'Monity',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Monity - Finanças Pessoais com IA',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Monity - Pare de Adivinhar Onde Seu Dinheiro Foi',
+    description: 'Usado por 5,000+ brasileiros. 20x mais rápido que planilhas. IA que aprende seus padrões financeiros.',
+    images: ['/og-image.jpg'],
   },
   generator: "v0.app",
 }
