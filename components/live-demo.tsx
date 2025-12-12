@@ -174,7 +174,7 @@ export function LiveDemo() {
             Isso é apenas uma amostra. O Monity aprende seus padrões e fica ainda mais preciso.
           </p>
           <a
-            href="https://app.monity-finance.com/signup"
+            href="https://app.monity-finance.com/demo"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold transition-colors"
           >
             Experimente grátis agora

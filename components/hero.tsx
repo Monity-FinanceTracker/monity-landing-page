@@ -58,7 +58,7 @@ export function Hero() {
               variant="outline"
               className="group border-2 border-primary/30 text-foreground text-lg px-8 py-6 h-auto hover:bg-primary/5 hover:border-primary/50 transition-all hover:-translate-y-1"
             >
-              <a href="#features">
+              <a href="https://app.monity-finance.com/demo">
                 <span className="flex items-center">
                   <Sparkles className="mr-2 h-5 w-5 text-primary" />
                   Ver Como Funciona
