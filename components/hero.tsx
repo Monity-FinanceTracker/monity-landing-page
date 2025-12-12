@@ -119,7 +119,7 @@ export function Hero() {
                 controls
                 poster="/novos/IA.png"
               >
-                <source src="/novos/Screen Recording 2025-11-28 at 15.51.52.mov" type="video/mp4" />
+                <source src="/Vídeo-Landing-Page.mp4" type="video/mp4" />
                 {/* Fallback image if video doesn't load */}
                 <img
                   src="/novos/IA.png"
