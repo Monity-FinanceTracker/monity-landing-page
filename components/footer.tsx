@@ -20,14 +20,8 @@ export function Footer() {
                 Monity
               </span>
             </div>
-            <p className="text-sm leading-relaxed text-muted-foreground mb-4">
+            <p className="text-sm leading-relaxed text-muted-foreground mb-6">
               Finanças pessoais com IA. Rastreie despesas, divida contas e domine seu dinheiro.
-            </p>
-            <p className="text-sm text-muted-foreground mb-6">
-              📧{" "}
-              <a href="mailto:leo.stuart@monity-finance.com" className="text-primary hover:underline font-medium">
-                leo.stuart@monity-finance.com
-              </a>
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -72,7 +66,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://app.monity-finance.com/signup?premium=true" className="text-muted-foreground transition-colors hover:text-primary">
+                <a href="#faq" className="text-muted-foreground transition-colors hover:text-primary">
                   Premium
                 </a>
               </li>
@@ -130,10 +124,8 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/monity.app"
+                  href="mailto:leo.stuart@monity-finance.com"
                   className="text-muted-foreground transition-colors hover:text-primary"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   Contato
                 </a>
